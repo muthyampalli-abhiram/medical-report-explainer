@@ -1,0 +1,93 @@
+{
+  "report_date": "19-Jun-2026",
+  "lab_name": "Apex Diagnostics Laboratory",
+  "layout": "plain_lines",
+  "results": [
+    {
+      "raw_name": "HDL Cholesterol",
+      "canonical_name": "HDL Cholesterol",
+      "value": 57.6,
+      "value_text": null,
+      "unit_original": "mg/dL",
+      "ref_text": "> 40",
+      "ref_low": 40.0,
+      "ref_high": null,
+      "expected_value_canonical": 57.6,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "NORMAL"
+    },
+    {
+      "raw_name": "Glycated Hemoglobin",
+      "canonical_name": "HbA1c",
+      "value": 7.3,
+      "value_text": null,
+      "unit_original": "%",
+      "ref_text": "4 - 5.6",
+      "ref_low": 4.0,
+      "ref_high": 5.6,
+      "expected_value_canonical": 7.3,
+      "expected_unit_canonical": "%",
+      "expected_flag": "HIGH"
+    },
+    {
+      "raw_name": "Fasting Blood Sugar",
+      "canonical_name": "Fasting Glucose",
+      "value": 82.1,
+      "value_text": null,
+      "unit_original": "mg/dL",
+      "ref_text": "70-99",
+      "ref_low": 70.0,
+      "ref_high": 99.0,
+      "expected_value_canonical": 82.1,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "NORMAL"
+    },
+    {
+      "raw_name": "Urine Protein",
+      "canonical_name": "Urine Protein",
+      "value": null,
+      "value_text": "Positive",
+      "unit_original": null,
+      "ref_text": "Negative",
+      "ref_low": null,
+      "ref_high": null,
+      "expected_value_canonical": null,
+      "expected_unit_canonical": null,
+      "expected_flag": "UNKNOWN"
+    },
+    {
+      "raw_name": "Haemoglobin",
+      "canonical_name": "Hemoglobin",
+      "value": 13.7,
+      "value_text": null,
+      "unit_original": "g/dL",
+      "ref_text": "13-17",
+      "ref_low": 13.0,
+      "ref_high": 17.0,
+      "expected_value_canonical": 13.7,
+      "expected_unit_canonical": "g/dL",
+      "expected_flag": "NORMAL"
+    },
+    {
+      "raw_name": "K",
+      "canonical_name": "Potassium",
+      "value": 1.9,
+      "value_text": null,
+      "unit_original": "mmol/L",
+      "ref_text": "3.5-5",
+      "ref_low": 3.5,
+      "ref_high": 5.0,
+      "expected_value_canonical": 1.9,
+      "expected_unit_canonical": "mmol/L",
+      "expected_flag": "CRITICAL_LOW"
+    }
+  ],
+  "planted_pii": [
+    "Ramesh Kumar",
+    "ID: 8492019",
+    "+91 98765 43210",
+    "ramesh.kumar98@example.org",
+    "4829 1048 5729",
+    "42 Palm Grove Road, Bengaluru 560001"
+  ]
+}

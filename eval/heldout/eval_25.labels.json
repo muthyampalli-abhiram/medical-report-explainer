@@ -1,0 +1,67 @@
+{
+  "report_date": "22-Jun-2026",
+  "lab_name": "Apex Diagnostics Laboratory",
+  "layout": "reordered_table",
+  "results": [
+    {
+      "raw_name": "Fasting Blood Glucose",
+      "canonical_name": "Fasting Glucose",
+      "value": 81.0,
+      "value_text": null,
+      "unit_original": "mg/dL",
+      "ref_text": "70-99",
+      "ref_low": 70.0,
+      "ref_high": 99.0,
+      "expected_value_canonical": 81.0,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "NORMAL"
+    },
+    {
+      "raw_name": "LDL Cholesterol Direct",
+      "canonical_name": "LDL Cholesterol",
+      "value": 51.1,
+      "value_text": null,
+      "unit_original": "mg/dL",
+      "ref_text": "< 100",
+      "ref_low": null,
+      "ref_high": 100.0,
+      "expected_value_canonical": 51.1,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "NORMAL"
+    },
+    {
+      "raw_name": "Hemoglobin",
+      "canonical_name": "Hemoglobin",
+      "value": 5.8,
+      "value_text": null,
+      "unit_original": "g/dL",
+      "ref_text": "13 - 17",
+      "ref_low": 13.0,
+      "ref_high": 17.0,
+      "expected_value_canonical": 5.8,
+      "expected_unit_canonical": "g/dL",
+      "expected_flag": "CRITICAL_LOW"
+    },
+    {
+      "raw_name": "Potassium",
+      "canonical_name": "Potassium",
+      "value": 3.7,
+      "value_text": null,
+      "unit_original": "mmol/L",
+      "ref_text": "3.5 - 5",
+      "ref_low": 3.5,
+      "ref_high": 5.0,
+      "expected_value_canonical": 3.7,
+      "expected_unit_canonical": "mmol/L",
+      "expected_flag": "NORMAL"
+    }
+  ],
+  "planted_pii": [
+    "Ramesh Kumar",
+    "ID: 8492019",
+    "+91 98765 43210",
+    "ramesh.kumar98@example.org",
+    "4829 1048 5729",
+    "42 Palm Grove Road, Bengaluru 560001"
+  ]
+}

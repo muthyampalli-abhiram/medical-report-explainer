@@ -1,0 +1,80 @@
+{
+  "report_date": "22-Aug-2026",
+  "lab_name": "Sunrise Pathology Centre",
+  "layout": "bordered_table",
+  "results": [
+    {
+      "raw_name": "Total Cholesterol",
+      "canonical_name": "Total Cholesterol",
+      "value": 6.2,
+      "value_text": null,
+      "unit_original": "mmol/L",
+      "ref_text": "< 5.2",
+      "ref_low": null,
+      "ref_high": 5.2,
+      "expected_value_canonical": 239.75,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "HIGH"
+    },
+    {
+      "raw_name": "Glucose, Fasting",
+      "canonical_name": "Fasting Glucose",
+      "value": 3.2,
+      "value_text": null,
+      "unit_original": "mmol/L",
+      "ref_text": "3.9-5.5",
+      "ref_low": 3.9,
+      "ref_high": 5.5,
+      "expected_value_canonical": 57.65,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "LOW"
+    },
+    {
+      "raw_name": "Glycated Hemoglobin",
+      "canonical_name": "HbA1c",
+      "value": 57.5,
+      "value_text": null,
+      "unit_original": "mmol/mol",
+      "ref_text": "20 - 42",
+      "ref_low": 20.0,
+      "ref_high": 42.0,
+      "expected_value_canonical": 7.41,
+      "expected_unit_canonical": "%",
+      "expected_flag": "HIGH"
+    },
+    {
+      "raw_name": "Hb",
+      "canonical_name": "Hemoglobin",
+      "value": 253.2,
+      "value_text": null,
+      "unit_original": "g/L",
+      "ref_text": "130-170",
+      "ref_low": 130.0,
+      "ref_high": 170.0,
+      "expected_value_canonical": 25.32,
+      "expected_unit_canonical": "g/dL",
+      "expected_flag": "CRITICAL_HIGH"
+    },
+    {
+      "raw_name": "Protein, Urine",
+      "canonical_name": "Urine Protein",
+      "value": null,
+      "value_text": "Positive",
+      "unit_original": null,
+      "ref_text": "Negative",
+      "ref_low": null,
+      "ref_high": null,
+      "expected_value_canonical": null,
+      "expected_unit_canonical": null,
+      "expected_flag": "UNKNOWN"
+    }
+  ],
+  "planted_pii": [
+    "Anil Verma",
+    "ID: 6291048",
+    "+91 98450 11223",
+    "anil.verma21@example.net",
+    "5820 9182 3019",
+    "88 Jubilee Hills, Road No 36, Hyderabad 500033"
+  ]
+}

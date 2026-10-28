@@ -1,0 +1,48 @@
+{
+  "_meta": {
+    "hi": {
+      "reviewed": false,
+      "reviewed_by": ""
+    },
+    "te": {
+      "reviewed": false,
+      "reviewed_by": ""
+    }
+  },
+  "en": {
+    "result_above": "Your result is {value} {unit}. The lab's reference range is {range}. This is above the reference range.",
+    "result_below": "Your result is {value} {unit}. The lab's reference range is {range}. This is below the reference range.",
+    "result_within": "Your result is {value} {unit}. The lab's reference range is {range}. This is within the reference range.",
+    "result_text": "Your result is {value}. The lab's reference is {reference}.",
+    "result_unknown": "We could not compare this result with a reference range.",
+    "escalation": "This value is far outside the usual range. Please contact your doctor or a healthcare provider promptly.",
+    "overall_notice": "{above} result(s) were above and {below} result(s) were below the reference range. Only a doctor can interpret what these results mean for your health.",
+    "overall_notice_critical": "One or more test results are far outside the usual range and need prompt medical attention. Please contact your doctor or a healthcare provider promptly.",
+    "disclaimer": "This tool explains lab reports in general terms and does not provide a diagnosis or medical advice. Always discuss your results with your doctor.",
+    "draft_notice": "This translation is a draft and may contain mistakes. The English version is the reference. Please check anything unclear with your doctor."
+  },
+  "hi": {
+    "result_above": "आपका परिणाम {value} {unit} है। लैब की संदर्भ सीमा {range} है। यह संदर्भ सीमा से अधिक है।",
+    "result_below": "आपका परिणाम {value} {unit} है। लैब की संदर्भ सीमा {range} है। यह संदर्भ सीमा से कम है।",
+    "result_within": "आपका परिणाम {value} {unit} है। लैब की संदर्भ सीमा {range} है। यह संदर्भ सीमा के भीतर है।",
+    "result_text": "आपका परिणाम {value} है। लैब का संदर्भ {reference} है।",
+    "result_unknown": "हम इस परिणाम की तुलना संदर्भ सीमा से नहीं कर सके।",
+    "escalation": "यह मान सामान्य सीमा से काफी बाहर है। कृपया जल्द से जल्द अपने डॉक्टर या स्वास्थ्य सेवा प्रदाता से संपर्क करें।",
+    "overall_notice": "{above} परिणाम संदर्भ सीमा से ऊपर और {below} परिणाम संदर्भ सीमा से नीचे हैं। केवल एक डॉक्टर ही यह बता सकते हैं कि आपके स्वास्थ्य के लिए इन परिणामों का क्या अर्थ है।",
+    "overall_notice_critical": "एक या अधिक जांच परिणाम सामान्य सीमा से काफी बाहर हैं और इन पर जल्द ध्यान देने की आवश्यकता है। कृपया जल्द से जल्द अपने डॉक्टर या स्वास्थ्य सेवा प्रदाता से संपर्क करें।",
+    "disclaimer": "यह टूल लैब रिपोर्ट को सामान्य शब्दों में समझाता है और कोई निदान या चिकित्सीय सलाह प्रदान नहीं करता है। हमेशा अपने परिणामों के बारे में अपने डॉक्टर से चर्चा करें।",
+    "draft_notice": "यह अनुवाद एक मसौदा है और इसमें गलतियां हो सकती हैं। अंग्रेजी संस्करण ही प्रामाणिक संदर्भ है। कृपया किसी भी अस्पष्ट बात के लिए अपने डॉक्टर से संपर्क करें।"
+  },
+  "te": {
+    "result_above": "మీ ఫలితం {value} {unit}. ల్యాబ్ రిఫరెన్స్ పరిధి {range}. ఇది రిఫరెన్స్ పరిధి కంటే ఎక్కువగా ఉంది.",
+    "result_below": "మీ ఫలితం {value} {unit}. ల్యాబ్ రిఫరెన్స్ పరిధి {range}. ఇది రిఫరెన్స్ పరిధి కంటే తక్కువగా ఉంది.",
+    "result_within": "మీ ఫలితం {value} {unit}. ల్యాబ్ రిఫరెన్స్ పరిధి {range}. ఇది రిఫరెన్స్ పరిధిలో ఉంది.",
+    "result_text": "మీ ఫలితం {value}. ల్యాబ్ రిఫరెన్స్ {reference}.",
+    "result_unknown": "మేము ఈ ఫలితాన్ని రిఫరెన్స్ పరిధితో పోల్చలేకపోయాము.",
+    "escalation": "ఈ విలువ సాధారణ పరిమితికి చాలా దూరంగా ఉంది. దయచేసి త్వరగా మీ వైద్యుడిని లేదా ఆరోగ్య సంరక్షణ ప్రదాతను సంప్రదించండి.",
+    "overall_notice": "{above} ఫలితాలు రిఫరెన్స్ పరిధి కంటే ఎక్కువగా మరియు {below} ఫలితాలు రిఫరెన్స్ పరిధి కంటే తక్కువగా ఉన్నాయి. మీ ఆరోగ్యానికి ఈ ఫలితాల అర్థం ఏమిటో ఒక వైద్యుడు మాత్రమే వివరించగలరు.",
+    "overall_notice_critical": "ఒకటి లేదా అంతకంటే ఎక్కువ పరీక్ష ఫలితాలు సాధారణ పరిమితికి చాలా దూరంగా ఉన్నాయి మరియు వాటిపై త్వరగా శ్రద్ధ అవసరం. దయచేసి త్వరగా మీ వైద్యుడిని లేదా ఆరోగ్య సంరక్షణ ప్రదాతను సంప్రదించండి.",
+    "disclaimer": "ఈ సాధనం ల్యాబ్ నివేదికలను సాధారణ పదాలలో వివరిస్తుంది మరియు ఎలాంటి వ్యాధి నిర్ధారణ లేదా వైద్య సలహాను అందించదు. మీ ఫలితాల గురించి ఎల్లప్పుడూ మీ వైద్యుడితో చర్చించండి.",
+    "draft_notice": "ఈ అనువాదం ఒక ముసాయిదా మరియు ఇందులో పొరపాట్లు ఉండవచ్చు. ఆంగ్ల సంస్కరణ మాత్రమే ప్రామాణికమైనది. ఏదైనా అస్పష్టంగా ఉంటే దయచేసి మీ వైద్యుడిని సంప్రదించండి."
+  }
+}

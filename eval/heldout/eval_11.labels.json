@@ -1,0 +1,67 @@
+{
+  "report_date": "07-Feb-2026",
+  "lab_name": "Metro Healthcare Lab",
+  "layout": "plain_lines",
+  "results": [
+    {
+      "raw_name": "Protein, Urine",
+      "canonical_name": "Urine Protein",
+      "value": null,
+      "value_text": "Negative",
+      "unit_original": null,
+      "ref_text": "Negative",
+      "ref_low": null,
+      "ref_high": null,
+      "expected_value_canonical": null,
+      "expected_unit_canonical": null,
+      "expected_flag": "NORMAL"
+    },
+    {
+      "raw_name": "Triglyceride",
+      "canonical_name": "Triglycerides",
+      "value": 193.8,
+      "value_text": null,
+      "unit_original": "mg/dL",
+      "ref_text": "< 150",
+      "ref_low": null,
+      "ref_high": 150.0,
+      "expected_value_canonical": 193.8,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "HIGH"
+    },
+    {
+      "raw_name": "HDL Cholesterol",
+      "canonical_name": "HDL Cholesterol",
+      "value": 21.7,
+      "value_text": null,
+      "unit_original": "mg/dL",
+      "ref_text": "> 40",
+      "ref_low": 40.0,
+      "ref_high": null,
+      "expected_value_canonical": 21.7,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "LOW"
+    },
+    {
+      "raw_name": "Fasting Glucose",
+      "canonical_name": "Fasting Glucose",
+      "value": 436.0,
+      "value_text": null,
+      "unit_original": "mg/dL",
+      "ref_text": "70-99",
+      "ref_low": 70.0,
+      "ref_high": 99.0,
+      "expected_value_canonical": 436.0,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "CRITICAL_HIGH"
+    }
+  ],
+  "planted_pii": [
+    "Priya Sharma",
+    "ID: 7391042",
+    "+91 91234 56789",
+    "priya.sharma99@example.com",
+    "7492 1048 3920",
+    "14 MG Road, Indiranagar, Bengaluru 560038"
+  ]
+}

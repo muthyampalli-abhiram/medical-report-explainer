@@ -1,0 +1,93 @@
+{
+  "report_date": "2026-05-19",
+  "lab_name": "Nova Medical Laboratory",
+  "layout": "reordered_table",
+  "results": [
+    {
+      "raw_name": "Urine Protein",
+      "canonical_name": "Urine Protein",
+      "value": null,
+      "value_text": "Positive",
+      "unit_original": null,
+      "ref_text": "Negative",
+      "ref_low": null,
+      "ref_high": null,
+      "expected_value_canonical": null,
+      "expected_unit_canonical": null,
+      "expected_flag": "UNKNOWN"
+    },
+    {
+      "raw_name": "Cholesterol Total",
+      "canonical_name": "Total Cholesterol",
+      "value": 174.6,
+      "value_text": null,
+      "unit_original": "mg/dL",
+      "ref_text": "< 200",
+      "ref_low": null,
+      "ref_high": 200.0,
+      "expected_value_canonical": 174.6,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "NORMAL"
+    },
+    {
+      "raw_name": "LDL-C",
+      "canonical_name": "LDL Cholesterol",
+      "value": 133.6,
+      "value_text": null,
+      "unit_original": "mg/dL",
+      "ref_text": "< 100",
+      "ref_low": null,
+      "ref_high": 100.0,
+      "expected_value_canonical": 133.6,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "HIGH"
+    },
+    {
+      "raw_name": "Triglyceride",
+      "canonical_name": "Triglycerides",
+      "value": 164.1,
+      "value_text": null,
+      "unit_original": "mg/dL",
+      "ref_text": "< 150",
+      "ref_low": null,
+      "ref_high": 150.0,
+      "expected_value_canonical": 164.1,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "HIGH"
+    },
+    {
+      "raw_name": "Hb A1c",
+      "canonical_name": "HbA1c",
+      "value": 7.0,
+      "value_text": null,
+      "unit_original": "%",
+      "ref_text": "4-5.6",
+      "ref_low": 4.0,
+      "ref_high": 5.6,
+      "expected_value_canonical": 7.0,
+      "expected_unit_canonical": "%",
+      "expected_flag": "HIGH"
+    },
+    {
+      "raw_name": "Glucose, Fasting",
+      "canonical_name": "Fasting Glucose",
+      "value": 91.5,
+      "value_text": null,
+      "unit_original": "mg/dL",
+      "ref_text": "70 - 99",
+      "ref_low": 70.0,
+      "ref_high": 99.0,
+      "expected_value_canonical": 91.5,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "NORMAL"
+    }
+  ],
+  "planted_pii": [
+    "Vikram Malhotra",
+    "ID: 4091827",
+    "+91 98100 55667",
+    "v.malhotra77@example.com",
+    "9182 3019 4820",
+    "102 Connaught Place, Block B, New Delhi 110001"
+  ]
+}

@@ -1,0 +1,82 @@
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Environment configurations and secrets (CRITICAL: Do NOT commit secrets)
+.env
+.env.*
+.env*.local
+*.env
+*.key
+*.pem
+*.cert
+*.crt
+*.pfx
+*.p12
+*.secret
+secrets/
+!.env.example
+
+# Runtime storage & local database
+/data/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# Uploaded files and user documents (Prevents leaking confidential medical records)
+uploads/
+uploaded_files/
+patient_records/
+patient_data/
+*patient*
+*patient*/**
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.tiff
+*.tif
+*.dcm
+*.dicom
+*.bmp
+*.webp
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.doc
+*.docx
+
+# Whitelist synthetic committed test assets and sample fixtures
+!samples/
+!samples/**
+!eval/
+!eval/**
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# IDE, OS, and editor files
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+temp/
+tmp/

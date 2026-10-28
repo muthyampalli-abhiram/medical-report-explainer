@@ -1,0 +1,106 @@
+{
+  "report_date": "2026-05-16",
+  "lab_name": "Nova Medical Laboratory",
+  "layout": "plain_lines",
+  "results": [
+    {
+      "raw_name": "HDL Cholesterol",
+      "canonical_name": "HDL Cholesterol",
+      "value": 1.3,
+      "value_text": null,
+      "unit_original": "mmol/L",
+      "ref_text": "> 1",
+      "ref_low": 1.0,
+      "ref_high": null,
+      "expected_value_canonical": 50.27,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "NORMAL"
+    },
+    {
+      "raw_name": "LDL Cholesterol",
+      "canonical_name": "LDL Cholesterol",
+      "value": 3.5,
+      "value_text": null,
+      "unit_original": "mmol/L",
+      "ref_text": "<= 2.6",
+      "ref_low": null,
+      "ref_high": 2.6,
+      "expected_value_canonical": 135.34,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "HIGH"
+    },
+    {
+      "raw_name": "TGL",
+      "canonical_name": "Triglycerides",
+      "value": 2.2,
+      "value_text": null,
+      "unit_original": "mmol/L",
+      "ref_text": "< 1.7",
+      "ref_low": null,
+      "ref_high": 1.7,
+      "expected_value_canonical": 194.85,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "HIGH"
+    },
+    {
+      "raw_name": "Urine Protein",
+      "canonical_name": "Urine Protein",
+      "value": null,
+      "value_text": "Trace",
+      "unit_original": null,
+      "ref_text": "Negative",
+      "ref_low": null,
+      "ref_high": null,
+      "expected_value_canonical": null,
+      "expected_unit_canonical": null,
+      "expected_flag": "UNKNOWN"
+    },
+    {
+      "raw_name": "K+",
+      "canonical_name": "Potassium",
+      "value": 7.4,
+      "value_text": null,
+      "unit_original": "mEq/L",
+      "ref_text": "3.5 - 5",
+      "ref_low": 3.5,
+      "ref_high": 5.0,
+      "expected_value_canonical": 7.4,
+      "expected_unit_canonical": "mmol/L",
+      "expected_flag": "CRITICAL_HIGH"
+    },
+    {
+      "raw_name": "Hb",
+      "canonical_name": "Hemoglobin",
+      "value": 96.4,
+      "value_text": null,
+      "unit_original": "g/L",
+      "ref_text": "130 - 170",
+      "ref_low": 130.0,
+      "ref_high": 170.0,
+      "expected_value_canonical": 9.64,
+      "expected_unit_canonical": "g/dL",
+      "expected_flag": "LOW"
+    },
+    {
+      "raw_name": "A1C",
+      "canonical_name": "HbA1c",
+      "value": 32.1,
+      "value_text": null,
+      "unit_original": "mmol/mol",
+      "ref_text": "20-42",
+      "ref_low": 20.0,
+      "ref_high": 42.0,
+      "expected_value_canonical": 5.09,
+      "expected_unit_canonical": "%",
+      "expected_flag": "NORMAL"
+    }
+  ],
+  "planted_pii": [
+    "Vikram Malhotra",
+    "ID: 4091827",
+    "+91 98100 55667",
+    "v.malhotra77@example.com",
+    "9182 3019 4820",
+    "102 Connaught Place, Block B, New Delhi 110001"
+  ]
+}

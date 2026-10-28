@@ -1,0 +1,80 @@
+{
+  "report_date": "2026-05-13",
+  "lab_name": "Nova Medical Laboratory",
+  "layout": "bordered_table",
+  "results": [
+    {
+      "raw_name": "Urine Albumin",
+      "canonical_name": "Urine Protein",
+      "value": null,
+      "value_text": "Trace",
+      "unit_original": null,
+      "ref_text": "Negative",
+      "ref_low": null,
+      "ref_high": null,
+      "expected_value_canonical": null,
+      "expected_unit_canonical": null,
+      "expected_flag": "UNKNOWN"
+    },
+    {
+      "raw_name": "K",
+      "canonical_name": "Potassium",
+      "value": 2.5,
+      "value_text": null,
+      "unit_original": "mmol/L",
+      "ref_text": "3.5-5",
+      "ref_low": 3.5,
+      "ref_high": 5.0,
+      "expected_value_canonical": 2.5,
+      "expected_unit_canonical": "mmol/L",
+      "expected_flag": "LOW"
+    },
+    {
+      "raw_name": "Fasting Blood Sugar",
+      "canonical_name": "Fasting Glucose",
+      "value": 36.7,
+      "value_text": null,
+      "unit_original": "mg/dL",
+      "ref_text": "70-99",
+      "ref_low": 70.0,
+      "ref_high": 99.0,
+      "expected_value_canonical": 36.7,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "CRITICAL_LOW"
+    },
+    {
+      "raw_name": "Haemoglobin",
+      "canonical_name": "Hemoglobin",
+      "value": 21.4,
+      "value_text": null,
+      "unit_original": "g/dL",
+      "ref_text": "13-17",
+      "ref_low": 13.0,
+      "ref_high": 17.0,
+      "expected_value_canonical": 21.4,
+      "expected_unit_canonical": "g/dL",
+      "expected_flag": "CRITICAL_HIGH"
+    },
+    {
+      "raw_name": "Total Cholesterol",
+      "canonical_name": "Total Cholesterol",
+      "value": 232.2,
+      "value_text": null,
+      "unit_original": "mg/dL",
+      "ref_text": "<= 200",
+      "ref_low": null,
+      "ref_high": 200.0,
+      "expected_value_canonical": 232.2,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "HIGH"
+    }
+  ],
+  "planted_pii": [
+    "Vikram Malhotra",
+    "ID: 4091827",
+    "+91 98100 55667",
+    "v.malhotra77@example.com",
+    "9182 3019 4820",
+    "102 Connaught Place, Block B, New Delhi 110001"
+  ]
+}

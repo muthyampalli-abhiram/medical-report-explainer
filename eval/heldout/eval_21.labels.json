@@ -1,0 +1,67 @@
+{
+  "report_date": "10-Feb-2026",
+  "lab_name": "Metro Healthcare Lab",
+  "layout": "reordered_table",
+  "results": [
+    {
+      "raw_name": "Fasting Glucose",
+      "canonical_name": "Fasting Glucose",
+      "value": 6.4,
+      "value_text": null,
+      "unit_original": "mmol/L",
+      "ref_text": "3.9-5.5",
+      "ref_low": 3.9,
+      "ref_high": 5.5,
+      "expected_value_canonical": 115.3,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "HIGH"
+    },
+    {
+      "raw_name": "LDL-C",
+      "canonical_name": "LDL Cholesterol",
+      "value": 2.3,
+      "value_text": null,
+      "unit_original": "mmol/L",
+      "ref_text": "<= 2.6",
+      "ref_low": null,
+      "ref_high": 2.6,
+      "expected_value_canonical": 88.94,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "NORMAL"
+    },
+    {
+      "raw_name": "Cholesterol",
+      "canonical_name": "Total Cholesterol",
+      "value": 5.5,
+      "value_text": null,
+      "unit_original": "mmol/L",
+      "ref_text": "<= 5.2",
+      "ref_low": null,
+      "ref_high": 5.2,
+      "expected_value_canonical": 212.69,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "HIGH"
+    },
+    {
+      "raw_name": "HDL-C",
+      "canonical_name": "HDL Cholesterol",
+      "value": 0.7,
+      "value_text": null,
+      "unit_original": "mmol/L",
+      "ref_text": ">= 1",
+      "ref_low": 1.0,
+      "ref_high": null,
+      "expected_value_canonical": 27.07,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "LOW"
+    }
+  ],
+  "planted_pii": [
+    "Priya Sharma",
+    "ID: 7391042",
+    "+91 91234 56789",
+    "priya.sharma99@example.com",
+    "7492 1048 3920",
+    "14 MG Road, Indiranagar, Bengaluru 560038"
+  ]
+}

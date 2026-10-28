@@ -1,0 +1,93 @@
+{
+  "report_date": "01-Oct-2026",
+  "lab_name": "Nova Medical Laboratory",
+  "layout": "bordered_table",
+  "results": [
+    {
+      "raw_name": "Protein, Urine",
+      "canonical_name": "Urine Protein",
+      "value": null,
+      "value_text": "Positive",
+      "unit_original": null,
+      "ref_text": "Negative",
+      "ref_low": null,
+      "ref_high": null,
+      "expected_value_canonical": null,
+      "expected_unit_canonical": null,
+      "expected_flag": "UNKNOWN"
+    },
+    {
+      "raw_name": "FBS",
+      "canonical_name": "Fasting Glucose",
+      "value": 46.4,
+      "value_text": null,
+      "unit_original": "mg/dL",
+      "ref_text": "70 - 99",
+      "ref_low": 70.0,
+      "ref_high": 99.0,
+      "expected_value_canonical": 46.4,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "LOW"
+    },
+    {
+      "raw_name": "Cholesterol Total",
+      "canonical_name": "Total Cholesterol",
+      "value": 169.0,
+      "value_text": null,
+      "unit_original": "mg/dL",
+      "ref_text": "<= 200",
+      "ref_low": null,
+      "ref_high": 200.0,
+      "expected_value_canonical": 169.0,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "NORMAL"
+    },
+    {
+      "raw_name": "Hemoglobin",
+      "canonical_name": "Hemoglobin",
+      "value": 10.9,
+      "value_text": null,
+      "unit_original": "g/dL",
+      "ref_text": "13 - 17",
+      "ref_low": 13.0,
+      "ref_high": 17.0,
+      "expected_value_canonical": 10.9,
+      "expected_unit_canonical": "g/dL",
+      "expected_flag": "LOW"
+    },
+    {
+      "raw_name": "HDL",
+      "canonical_name": "HDL Cholesterol",
+      "value": 23.3,
+      "value_text": null,
+      "unit_original": "mg/dL",
+      "ref_text": ">= 40",
+      "ref_low": 40.0,
+      "ref_high": null,
+      "expected_value_canonical": 23.3,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "LOW"
+    },
+    {
+      "raw_name": "K+",
+      "canonical_name": "Potassium",
+      "value": 4.0,
+      "value_text": null,
+      "unit_original": "mmol/L",
+      "ref_text": "3.5 - 5",
+      "ref_low": 3.5,
+      "ref_high": 5.0,
+      "expected_value_canonical": 4.0,
+      "expected_unit_canonical": "mmol/L",
+      "expected_flag": "NORMAL"
+    }
+  ],
+  "planted_pii": [
+    "Vikram Malhotra",
+    "ID: 4091827",
+    "+91 98100 55667",
+    "v.malhotra77@example.com",
+    "9182 3019 4820",
+    "102 Connaught Place, Block B, New Delhi 110001"
+  ]
+}

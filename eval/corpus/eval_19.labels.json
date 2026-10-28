@@ -1,0 +1,80 @@
+{
+  "report_date": "04-Oct-2026",
+  "lab_name": "Nova Medical Laboratory",
+  "layout": "plain_lines",
+  "results": [
+    {
+      "raw_name": "Hemoglobin",
+      "canonical_name": "Hemoglobin",
+      "value": 8.7,
+      "value_text": null,
+      "unit_original": "g/dL",
+      "ref_text": "13-17",
+      "ref_low": 13.0,
+      "ref_high": 17.0,
+      "expected_value_canonical": 8.7,
+      "expected_unit_canonical": "g/dL",
+      "expected_flag": "LOW"
+    },
+    {
+      "raw_name": "TGL",
+      "canonical_name": "Triglycerides",
+      "value": 162.9,
+      "value_text": null,
+      "unit_original": "mg/dL",
+      "ref_text": "< 150",
+      "ref_low": null,
+      "ref_high": 150.0,
+      "expected_value_canonical": 162.9,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "HIGH"
+    },
+    {
+      "raw_name": "LDL",
+      "canonical_name": "LDL Cholesterol",
+      "value": 113.9,
+      "value_text": null,
+      "unit_original": "mg/dL",
+      "ref_text": "< 100",
+      "ref_low": null,
+      "ref_high": 100.0,
+      "expected_value_canonical": 113.9,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "HIGH"
+    },
+    {
+      "raw_name": "Serum Potassium",
+      "canonical_name": "Potassium",
+      "value": 1.8,
+      "value_text": null,
+      "unit_original": "mmol/L",
+      "ref_text": "3.5-5",
+      "ref_low": 3.5,
+      "ref_high": 5.0,
+      "expected_value_canonical": 1.8,
+      "expected_unit_canonical": "mmol/L",
+      "expected_flag": "CRITICAL_LOW"
+    },
+    {
+      "raw_name": "Glucose, Fasting",
+      "canonical_name": "Fasting Glucose",
+      "value": 47.8,
+      "value_text": null,
+      "unit_original": "mg/dL",
+      "ref_text": "70-99",
+      "ref_low": 70.0,
+      "ref_high": 99.0,
+      "expected_value_canonical": 47.8,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "LOW"
+    }
+  ],
+  "planted_pii": [
+    "Vikram Malhotra",
+    "ID: 4091827",
+    "+91 98100 55667",
+    "v.malhotra77@example.com",
+    "9182 3019 4820",
+    "102 Connaught Place, Block B, New Delhi 110001"
+  ]
+}

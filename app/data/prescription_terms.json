@@ -1,0 +1,41 @@
+{
+  "frequencies": {
+    "OD": "once a day",
+    "BD": "twice a day",
+    "BID": "twice a day",
+    "TDS": "three times a day",
+    "TID": "three times a day",
+    "QID": "four times a day",
+    "HS": "at bedtime",
+    "SOS": "only when needed",
+    "STAT": "immediately, once",
+    "Q8H": "every 8 hours",
+    "Q12H": "every 12 hours"
+  },
+  "instructions": {
+    "AC": "before food",
+    "before food": "before food",
+    "PC": "after food",
+    "after food": "after food",
+    "empty stomach": "on an empty stomach",
+    "on an empty stomach": "on an empty stomach",
+    "with food": "with food",
+    "at bedtime": "at bedtime",
+    "HS": "at bedtime"
+  },
+  "forms": {
+    "Tab": "Tablet",
+    "Tablet": "Tablet",
+    "Cap": "Capsule",
+    "Capsule": "Capsule",
+    "Syp": "Syrup",
+    "Syrup": "Syrup",
+    "Inj": "Injection",
+    "Injection": "Injection",
+    "Drops": "Drops",
+    "Oint": "Ointment",
+    "Ointment": "Ointment",
+    "Cream": "Cream"
+  },
+  "disclaimer": "This is a summary of what is written on your prescription. It is not a substitute for your doctor's or pharmacist's instructions. Do not change how you take any medicine without asking your doctor or pharmacist."
+}

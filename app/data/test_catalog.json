@@ -1,0 +1,199 @@
+[
+  {
+    "canonical_name": "HbA1c",
+    "aliases": [
+      "Glycosylated Hb",
+      "Glycated Hemoglobin",
+      "Glycosylated Hemoglobin",
+      "A1C",
+      "HbA1C",
+      "Hb A1c"
+    ],
+    "canonical_unit": "%",
+    "unit_conversions": [
+      {
+        "from_unit": "mmol/mol",
+        "factor": null,
+        "formula": "(mmol_per_mol / 10.929) + 2.15"
+      }
+    ],
+    "critical_low": null,
+    "critical_high": null,
+    "plausible_low": 2.0,
+    "plausible_high": 20.0,
+    "plain_description": "HbA1c shows your average blood sugar level over roughly the last three months. Doctors use it to see how blood sugar has been over time.",
+    "plain_description_hi": "HbA1c लगभग पिछले तीन महीनों में आपके रक्त शर्करा (ब्लड शुगर) के औसत स्तर को दिखाता है। डॉक्टर इसका उपयोग यह देखने के लिए करते हैं कि समय के साथ ब्लड शुगर कैसा रहा है।",
+    "plain_description_te": "HbA1c దాదాపు గత మూడు నెలల్లో మీ సగటు రక్తంలో చక్కెర (బ్లడ్ షుగర్) స్థాయిని చూపుతుంది. కాలక్రమేణా బ్లడ్ షుగర్ ఎలా ఉందో పరిశీలించడానికి వైద్యులు దీనిని ఉపయోగిస్తారు."
+  },
+  {
+    "canonical_name": "Fasting Glucose",
+    "aliases": [
+      "FBS",
+      "Fasting Blood Sugar",
+      "Glucose Fasting",
+      "Glucose, Fasting",
+      "Fasting Blood Glucose"
+    ],
+    "canonical_unit": "mg/dL",
+    "unit_conversions": [
+      {
+        "from_unit": "mmol/L",
+        "factor": 18.016
+      }
+    ],
+    "critical_low": 40.0,
+    "critical_high": 400.0,
+    "plausible_low": 20.0,
+    "plausible_high": 1000.0,
+    "plain_description": "Fasting glucose measures the amount of sugar in your blood after an overnight fast. Doctors use it to check how well your body manages blood sugar levels.",
+    "plain_description_hi": "Fasting glucose रात भर भूखे रहने (उपवास) के बाद आपके रक्त में शर्करा की मात्रा को मापता है। डॉक्टर यह जांचने के लिए इसका उपयोग करते हैं कि आपका शरीर ब्लड शुगर के स्तर को कितनी अच्छी तरह नियंत्रित करता है।",
+    "plain_description_te": "Fasting glucose రాత్రంతా ఖాళీ కడుపుతో ఉన్న తర్వాత మీ రక్తంలో ఉండే చక్కెర పరిమాణాన్ని కొలుస్తుంది. మీ శరీరం బ్లడ్ షుగర్ స్థాయిలను ఎంత సమర్థవంతంగా నిర్వహిస్తుందో తనిఖీ చేయడానికి వైద్యులు దీనిని ఉపయోగిస్తారు."
+  },
+  {
+    "canonical_name": "Total Cholesterol",
+    "aliases": [
+      "Cholesterol Total",
+      "Cholesterol",
+      "Serum Cholesterol"
+    ],
+    "canonical_unit": "mg/dL",
+    "unit_conversions": [
+      {
+        "from_unit": "mmol/L",
+        "factor": 38.67
+      }
+    ],
+    "critical_low": null,
+    "critical_high": null,
+    "plausible_low": 50.0,
+    "plausible_high": 600.0,
+    "plain_description": "Total cholesterol measures the combined amount of all cholesterol carried in your blood. Doctors order it to evaluate overall blood lipid levels.",
+    "plain_description_hi": "Total cholesterol आपके रक्त में मौजूद सभी प्रकार के कोलेस्ट्रॉल की कुल मात्रा को मापता है। डॉक्टर समग्र रक्त लिपिड स्तर का मूल्यांकन करने के लिए इसकी सलाह देते हैं।",
+    "plain_description_te": "Total cholesterol మీ రక్తంలో ఉన్న మొత్తం కొలెస్ట్రాల్ పరిమాణాన్ని కొలుస్తుంది. రక్తంలోని మొత్తం లిపిడ్ స్థాయిలను అంచనా వేయడానికి వైద్యులు దీనిని సూచిస్తారు."
+  },
+  {
+    "canonical_name": "LDL Cholesterol",
+    "aliases": [
+      "LDL-C",
+      "LDL",
+      "LDL Cholesterol Direct"
+    ],
+    "canonical_unit": "mg/dL",
+    "unit_conversions": [
+      {
+        "from_unit": "mmol/L",
+        "factor": 38.67
+      }
+    ],
+    "critical_low": null,
+    "critical_high": null,
+    "plausible_low": 10.0,
+    "plausible_high": 500.0,
+    "plain_description": "LDL cholesterol measures the cholesterol particles that carry lipids from your liver to the rest of your body. Doctors use it to evaluate your blood lipid profile.",
+    "plain_description_hi": "LDL cholesterol उन कोलेस्ट्रॉल कणों को मापता है जो लिवर से शरीर के बाकी हिस्सों तक वसा ले जाते हैं। डॉक्टर आपके रक्त लिपिड प्रोफाइल का आकलन करने के लिए इसका उपयोग करते हैं।",
+    "plain_description_te": "LDL cholesterol కాలేయం నుండి శరీరంలోని ఇతర భాగాలకు లిపిడ్లను తీసుకెళ్లే కొలెస్ట్రాల్ కణాలను కొలుస్తుంది. మీ రక్త లిపిడ్ ప్రొఫైల్‌ను అంచనా వేయడానికి వైద్యులు దీనిని ఉపయోగిస్తారు."
+  },
+  {
+    "canonical_name": "HDL Cholesterol",
+    "aliases": [
+      "HDL-C",
+      "HDL"
+    ],
+    "canonical_unit": "mg/dL",
+    "unit_conversions": [
+      {
+        "from_unit": "mmol/L",
+        "factor": 38.67
+      }
+    ],
+    "critical_low": null,
+    "critical_high": null,
+    "plausible_low": 5.0,
+    "plausible_high": 200.0,
+    "plain_description": "HDL cholesterol measures the cholesterol particles that help carry excess cholesterol back to your liver. Doctors order it to understand your overall lipid balance.",
+    "plain_description_hi": "HDL cholesterol उन कोलेस्ट्रॉल कणों को मापता है जो अतिरिक्त कोलेस्ट्रॉल को वापस आपके लिवर में ले जाने में मदद करते हैं। डॉक्टर आपके समग्र लिपिड संतुलन को समझने के लिए इसकी सलाह देते हैं।",
+    "plain_description_te": "HDL cholesterol అదనపు కొలెస్ట్రాల్‌ను తిరిగి మీ కాలేయానికి చేర్చడంలో సహాయపడే కొలెస్ట్రాల్ కణాలను కొలుస్తుంది. మీ మొత్తం లిపిడ్ సమతుల్యతను అర్థం చేసుకోవడానికి వైద్యులు దీనిని సూచిస్తారు."
+  },
+  {
+    "canonical_name": "Triglycerides",
+    "aliases": [
+      "TG",
+      "TGL",
+      "Triglyceride"
+    ],
+    "canonical_unit": "mg/dL",
+    "unit_conversions": [
+      {
+        "from_unit": "mmol/L",
+        "factor": 88.57
+      }
+    ],
+    "critical_low": null,
+    "critical_high": null,
+    "plausible_low": 10.0,
+    "plausible_high": 3000.0,
+    "plain_description": "Triglycerides measures a common type of fat in your bloodstream formed from unused calories. Doctors use it to check how your body stores and uses fat.",
+    "plain_description_hi": "Triglycerides आपके रक्तप्रवाह में अप्रयुक्त कैलोरी से बनने वाले एक सामान्य प्रकार के वसा को मापता है। डॉक्टर यह जांचने के लिए इसका उपयोग करते हैं कि आपका शरीर वसा को कैसे जमा और उपयोग करता है।",
+    "plain_description_te": "Triglycerides ఉపయోగించని క్యాలరీల నుండి మీ రక్తంలో ఏర్పడే ఒక సాధారణ రకమైన కొవ్వును కొలుస్తుంది. మీ శరీరం కొవ్వును ఎలా నిల్వ చేస్తుంది మరియు ఉపయోగిస్తుందో తనిఖీ చేయడానికి వైద్యులు దీనిని ఉపయోగిస్తారు."
+  },
+  {
+    "canonical_name": "Hemoglobin",
+    "aliases": [
+      "Haemoglobin",
+      "Hb",
+      "Hgb"
+    ],
+    "canonical_unit": "g/dL",
+    "unit_conversions": [
+      {
+        "from_unit": "g/L",
+        "factor": 0.1
+      }
+    ],
+    "critical_low": 7.0,
+    "critical_high": 20.0,
+    "plausible_low": 3.0,
+    "plausible_high": 25.0,
+    "plain_description": "Hemoglobin measures the iron-rich protein inside your red blood cells. Doctors order it to check your blood's capacity to transport oxygen throughout your body.",
+    "plain_description_hi": "Hemoglobin आपकी लाल रक्त कोशिकाओं में मौजूद आयरन युक्त प्रोटीन को मापता है। डॉक्टर पूरे शरीर में ऑक्सीजन पहुंचाने की आपके रक्त की क्षमता की जांच के लिए इसकी सलाह देते हैं।",
+    "plain_description_te": "Hemoglobin మీ ఎర్ర రక్త కణాల లోపల ఉండే ఐరన్ అధికంగా ఉండే ప్రొటీన్‌ను కొలుస్తుంది. మీ శరీరం అంతటా ఆక్సిజన్‌ను చేరవేసే మీ రక్తం సామర్థ్యాన్ని తనిఖీ చేయడానికి వైద్యులు దీనిని సూచిస్తారు."
+  },
+  {
+    "canonical_name": "Potassium",
+    "aliases": [
+      "Serum Potassium",
+      "K+",
+      "K"
+    ],
+    "canonical_unit": "mmol/L",
+    "unit_conversions": [
+      {
+        "from_unit": "mEq/L",
+        "factor": 1.0
+      }
+    ],
+    "critical_low": 2.5,
+    "critical_high": 6.5,
+    "plausible_low": 1.5,
+    "plausible_high": 9.0,
+    "plain_description": "Potassium measures a vital mineral and electrolyte in your bloodstream. Doctors use it to monitor nerve communication, muscle movements, and heart rhythm.",
+    "plain_description_hi": "Potassium आपके रक्तप्रवाह में एक महत्वपूर्ण खनिज और इलेक्ट्रोलाइट को मापता है। डॉक्टर तंत्रिका संचार, मांसपेशियों की गति और हृदय की धड़कन की निगरानी के लिए इसका उपयोग करते हैं।",
+    "plain_description_te": "Potassium మీ రక్తప్రవాహంలో ఒక ముఖ్యమైన ఖనిజం మరియు ఎలక్ట్రోలైట్‌ను కొలుస్తుంది. నరాల సంభాషణ, కండరాల కదలికలు మరియు గుండె లయను పర్యవేక్షించడానికి వైద్యులు దీనిని ఉపయోగిస్తారు."
+  },
+  {
+    "canonical_name": "Urine Protein",
+    "aliases": [
+      "Protein, Urine",
+      "Urine Albumin"
+    ],
+    "canonical_unit": null,
+    "unit_conversions": [],
+    "critical_low": null,
+    "critical_high": null,
+    "plausible_low": null,
+    "plausible_high": null,
+    "plain_description": "Urine protein checks for the presence of protein in your urine sample. Doctors order it to monitor how effectively your kidneys filter fluids.",
+    "plain_description_hi": "Urine protein आपके मूत्र के नमूने में प्रोटीन की उपस्थिति की जांच करता है। आपके गुर्दे तरल पदार्थों को कितनी प्रभावी ढंग से छानते हैं, इसकी निगरानी के लिए डॉक्टर इसकी सलाह देते हैं।",
+    "plain_description_te": "Urine protein మీ మూత్ర నమూనాలో ప్రొటీన్ ఉనికిని తనిఖీ చేస్తుంది. మీ మూత్రపిండాలు ఎంత సమర్థవంతంగా ద్రవాలను వడపోస్తాయో పర్యవేక్షించడానికి వైద్యులు దీనిని సూచిస్తారు."
+  }
+]

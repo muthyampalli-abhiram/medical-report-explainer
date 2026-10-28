@@ -1,0 +1,341 @@
+{
+  "metadata": {
+    "timestamp": "2026-10-23 07:56:39 UTC",
+    "seed": 42,
+    "label": null,
+    "corpus": "C:\\Users\\abhir\\.gemini\\antigravity-ide\\scratch\\medical-report-explainer\\eval\\corpus",
+    "safety_file": null,
+    "mode": "full",
+    "python_version": "3.11.15",
+    "tesseract_version": "5.5.3.20260724",
+    "digital_files_count": 30,
+    "image_files_count": 30,
+    "run_time_seconds": 120.02
+  },
+  "metrics": {
+    "digital_extraction": {
+      "total_files": 30,
+      "total_expected_rows": 188,
+      "total_extracted_rows": 188,
+      "correct_rows": 188,
+      "lost_rows": 0,
+      "row_recall": 1.0,
+      "row_precision": 1.0,
+      "field_accuracy": 1.0,
+      "per_layout": {
+        "bordered_table": {
+          "expected": 65,
+          "extracted": 65,
+          "correct": 65,
+          "fields_total": 455,
+          "fields_matched": 455,
+          "recall": 1.0,
+          "precision": 1.0,
+          "field_accuracy": 1.0
+        },
+        "plain_lines": {
+          "expected": 57,
+          "extracted": 57,
+          "correct": 57,
+          "fields_total": 399,
+          "fields_matched": 399,
+          "recall": 1.0,
+          "precision": 1.0,
+          "field_accuracy": 1.0
+        },
+        "reordered_table": {
+          "expected": 66,
+          "extracted": 66,
+          "correct": 66,
+          "fields_total": 462,
+          "fields_matched": 462,
+          "recall": 1.0,
+          "precision": 1.0,
+          "field_accuracy": 1.0
+        }
+      }
+    },
+    "end_to_end": {
+      "total_results": 188,
+      "canonical_accuracy": 1.0,
+      "unit_conversion_accuracy": 1.0,
+      "flag_accuracy": 1.0,
+      "critical_cases": {
+        "total": 17,
+        "flag_accuracy": 1.0
+      },
+      "si_unit_cases": {
+        "total": 148,
+        "unit_conversion_accuracy": 1.0,
+        "flag_accuracy": 1.0
+      },
+      "confusion_matrix": {
+        "HIGH": {
+          "HIGH": 55
+        },
+        "LOW": {
+          "LOW": 35
+        },
+        "NORMAL": {
+          "NORMAL": 62
+        },
+        "CRITICAL_LOW": {
+          "CRITICAL_LOW": 8
+        },
+        "UNKNOWN": {
+          "UNKNOWN": 19
+        },
+        "CRITICAL_HIGH": {
+          "CRITICAL_HIGH": 9
+        }
+      }
+    },
+    "case_lists": {
+      "flag_cases": {
+        "total": 40,
+        "passed": 40,
+        "accuracy": 1.0
+      },
+      "unit_cases": {
+        "total": 20,
+        "passed": 20,
+        "accuracy": 1.0
+      }
+    },
+    "ocr": {
+      "overall_safety_count": 0,
+      "conditions": {
+        "clean": {
+          "expected_rows": 65,
+          "found_rows": 65,
+          "row_recall": 1.0,
+          "field_accuracy": 0.9375,
+          "average_confidence": 0.8399,
+          "abstention_rate": 0.3692,
+          "safety_count": 0,
+          "junk_rows": 1
+        },
+        "skewed": {
+          "expected_rows": 65,
+          "found_rows": 62,
+          "row_recall": 0.9538,
+          "field_accuracy": 0.9433,
+          "average_confidence": 0.8551,
+          "abstention_rate": 0.3871,
+          "safety_count": 0,
+          "junk_rows": 2
+        },
+        "poor": {
+          "expected_rows": 65,
+          "found_rows": 0,
+          "row_recall": 0.0,
+          "field_accuracy": 0.0,
+          "average_confidence": 0.0,
+          "abstention_rate": 1.0,
+          "safety_count": 0,
+          "junk_rows": 0
+        }
+      }
+    },
+    "readability": {
+      "count_evaluated": 19,
+      "mean_grade_level": 7.17,
+      "max_grade_level": 12.69,
+      "above_grade_9_count": 5,
+      "above_grade_9_items": [
+        {
+          "category": "plain_description",
+          "name": "Total Cholesterol",
+          "grade_level": 11.76,
+          "text": "Total cholesterol measures the combined amount of all cholesterol carried in your blood. Doctors order it to evaluate overall blood lipid levels."
+        },
+        {
+          "category": "plain_description",
+          "name": "LDL Cholesterol",
+          "grade_level": 10.22,
+          "text": "LDL cholesterol measures the cholesterol particles that carry lipids from your liver to the rest of your body. Doctors use it to evaluate your blood lipid profile."
+        },
+        {
+          "category": "plain_description",
+          "name": "HDL Cholesterol",
+          "grade_level": 12.69,
+          "text": "HDL cholesterol measures the cholesterol particles that help carry excess cholesterol back to your liver. Doctors order it to understand your overall lipid balance."
+        },
+        {
+          "category": "plain_description",
+          "name": "Hemoglobin",
+          "grade_level": 9.45,
+          "text": "Hemoglobin measures the iron-rich protein inside your red blood cells. Doctors order it to check your blood's capacity to transport oxygen throughout your body."
+        },
+        {
+          "category": "plain_description",
+          "name": "Potassium",
+          "grade_level": 11.76,
+          "text": "Potassium measures a vital mineral and electrolyte in your bloodstream. Doctors use it to monitor nerve communication, muscle movements, and heart rhythm."
+        }
+      ],
+      "all_items": [
+        {
+          "category": "plain_description",
+          "name": "HbA1c",
+          "text": "HbA1c shows your average blood sugar level over roughly the last three months. Doctors use it to see how blood sugar has been over time.",
+          "grade_level": 5.33
+        },
+        {
+          "category": "plain_description",
+          "name": "Fasting Glucose",
+          "text": "Fasting glucose measures the amount of sugar in your blood after an overnight fast. Doctors use it to check how well your body manages blood sugar levels.",
+          "grade_level": 8.03
+        },
+        {
+          "category": "plain_description",
+          "name": "Total Cholesterol",
+          "text": "Total cholesterol measures the combined amount of all cholesterol carried in your blood. Doctors order it to evaluate overall blood lipid levels.",
+          "grade_level": 11.76
+        },
+        {
+          "category": "plain_description",
+          "name": "LDL Cholesterol",
+          "text": "LDL cholesterol measures the cholesterol particles that carry lipids from your liver to the rest of your body. Doctors use it to evaluate your blood lipid profile.",
+          "grade_level": 10.22
+        },
+        {
+          "category": "plain_description",
+          "name": "HDL Cholesterol",
+          "text": "HDL cholesterol measures the cholesterol particles that help carry excess cholesterol back to your liver. Doctors order it to understand your overall lipid balance.",
+          "grade_level": 12.69
+        },
+        {
+          "category": "plain_description",
+          "name": "Triglycerides",
+          "text": "Triglycerides measures a common type of fat in your bloodstream formed from unused calories. Doctors use it to check how your body stores and uses fat.",
+          "grade_level": 9.0
+        },
+        {
+          "category": "plain_description",
+          "name": "Hemoglobin",
+          "text": "Hemoglobin measures the iron-rich protein inside your red blood cells. Doctors order it to check your blood's capacity to transport oxygen throughout your body.",
+          "grade_level": 9.45
+        },
+        {
+          "category": "plain_description",
+          "name": "Potassium",
+          "text": "Potassium measures a vital mineral and electrolyte in your bloodstream. Doctors use it to monitor nerve communication, muscle movements, and heart rhythm.",
+          "grade_level": 11.76
+        },
+        {
+          "category": "plain_description",
+          "name": "Urine Protein",
+          "text": "Urine protein checks for the presence of protein in your urine sample. Doctors order it to monitor how effectively your kidneys filter fluids.",
+          "grade_level": 8.9
+        },
+        {
+          "category": "fixed_result_sentence",
+          "name": "result_above",
+          "text": "Your result is {value} {unit}. The lab's reference range is {range}. This is above the reference range.",
+          "grade_level": 4.45
+        },
+        {
+          "category": "fixed_result_sentence",
+          "name": "result_below",
+          "text": "Your result is {value} {unit}. The lab's reference range is {range}. This is below the reference range.",
+          "grade_level": 4.45
+        },
+        {
+          "category": "fixed_result_sentence",
+          "name": "result_within",
+          "text": "Your result is {value} {unit}. The lab's reference range is {range}. This is within the reference range.",
+          "grade_level": 4.45
+        },
+        {
+          "category": "fixed_result_sentence",
+          "name": "result_text",
+          "text": "Your result is {value}. The lab's reference is {reference}.",
+          "grade_level": 4.06
+        },
+        {
+          "category": "overall_notice",
+          "name": "overall_notice",
+          "text": "{above} result(s) were above and {below} result(s) were below the reference range. Only a doctor can interpret what these results mean for your health.",
+          "grade_level": 7.18
+        },
+        {
+          "category": "overall_notice",
+          "name": "overall_notice_critical",
+          "text": "One or more test results are far outside the usual range and need prompt medical attention. Please contact your doctor or a healthcare provider promptly.",
+          "grade_level": 7.22
+        },
+        {
+          "category": "doctor_question",
+          "name": "question_1",
+          "text": "Are there any other tests I should have?",
+          "grade_level": 0.8
+        },
+        {
+          "category": "doctor_question",
+          "name": "question_2",
+          "text": "When should I repeat these tests?",
+          "grade_level": 0.52
+        },
+        {
+          "category": "doctor_question",
+          "name": "question_3",
+          "text": "Is there anything in my diet, activity, or daily routine I should discuss with you?",
+          "grade_level": 8.35
+        },
+        {
+          "category": "doctor_question",
+          "name": "question_4",
+          "text": "Should I bring any of these results to my next appointment with another specialist?",
+          "grade_level": 7.57
+        }
+      ]
+    },
+    "safety": {
+      "unsafe_detection_rate": 1.0,
+      "unsafe_flagged_count": 40,
+      "unsafe_total_count": 40,
+      "false_positive_rate": 0.0,
+      "benign_flagged_count": 0,
+      "benign_total_count": 30,
+      "end_to_end_neutralized_count": 40,
+      "prompt_injection": {
+        "total": 10,
+        "passed": 10
+      },
+      "live_llm": {
+        "run": false,
+        "provider": "groq",
+        "model": "openai/gpt-oss-20b",
+        "note": "live LLM evaluation skipped"
+      }
+    },
+    "privacy": {
+      "strings_scanned": 210,
+      "leaks_found": 0
+    },
+    "translation_integrity": {
+      "total_comparisons": 185,
+      "mismatches": 0,
+      "draft_notice_verified": true,
+      "unreviewed_status": "All translations marked unreviewed (reviewed=false) with disclaimer banner."
+    },
+    "robustness": {
+      "total_inputs": 10,
+      "passed": 10
+    },
+    "performance": {
+      "digital_pdf_seconds": {
+        "median": 0.0472,
+        "p95": 0.077,
+        "count": 30
+      },
+      "ocr_image_seconds": {
+        "median": 1.5603,
+        "p95": 1.7865,
+        "count": 30
+      }
+    }
+  },
+  "failures": []
+}

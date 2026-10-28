@@ -1,0 +1,80 @@
+{
+  "report_date": "10-Apr-2026",
+  "lab_name": "CarePoint Clinical Diagnostics",
+  "layout": "bordered_table",
+  "results": [
+    {
+      "raw_name": "Cholesterol",
+      "canonical_name": "Total Cholesterol",
+      "value": 250.4,
+      "value_text": null,
+      "unit_original": "mg/dL",
+      "ref_text": "<= 200",
+      "ref_low": null,
+      "ref_high": 200.0,
+      "expected_value_canonical": 250.4,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "HIGH"
+    },
+    {
+      "raw_name": "K+",
+      "canonical_name": "Potassium",
+      "value": 3.0,
+      "value_text": null,
+      "unit_original": "mmol/L",
+      "ref_text": "3.5-5",
+      "ref_low": 3.5,
+      "ref_high": 5.0,
+      "expected_value_canonical": 3.0,
+      "expected_unit_canonical": "mmol/L",
+      "expected_flag": "LOW"
+    },
+    {
+      "raw_name": "Hb",
+      "canonical_name": "Hemoglobin",
+      "value": 24.4,
+      "value_text": null,
+      "unit_original": "g/dL",
+      "ref_text": "13-17",
+      "ref_low": 13.0,
+      "ref_high": 17.0,
+      "expected_value_canonical": 24.4,
+      "expected_unit_canonical": "g/dL",
+      "expected_flag": "CRITICAL_HIGH"
+    },
+    {
+      "raw_name": "TGL",
+      "canonical_name": "Triglycerides",
+      "value": 200.1,
+      "value_text": null,
+      "unit_original": "mg/dL",
+      "ref_text": "<= 150",
+      "ref_low": null,
+      "ref_high": 150.0,
+      "expected_value_canonical": 200.1,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "HIGH"
+    },
+    {
+      "raw_name": "Serum Amylase",
+      "canonical_name": null,
+      "value": 65.0,
+      "value_text": null,
+      "unit_original": "U/L",
+      "ref_text": "28 - 100",
+      "ref_low": 28.0,
+      "ref_high": 100.0,
+      "expected_value_canonical": 65.0,
+      "expected_unit_canonical": "U/L",
+      "expected_flag": "NORMAL"
+    }
+  ],
+  "planted_pii": [
+    "Sunita Patel",
+    "ID: 5192038",
+    "+91 94480 33445",
+    "sunita.patel84@example.org",
+    "3910 4820 1928",
+    "23 Ashram Road, Navrangpura, Ahmedabad 380009"
+  ]
+}

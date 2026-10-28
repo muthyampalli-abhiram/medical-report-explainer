@@ -1,0 +1,14 @@
+{
+  "HIGH": "My {test} result was {value} {unit}, which is above the reference range of {range}. What could be contributing to this, and does it need any follow-up?",
+  "LOW": "My {test} result was {value} {unit}, which is below the reference range of {range}. What could be contributing to this, and does it need any follow-up?",
+  "CRITICAL_LOW": "My {test} result was {value} {unit}, which is far outside the usual range. Do I need to be seen urgently?",
+  "CRITICAL_HIGH": "My {test} result was {value} {unit}, which is far outside the usual range. Do I need to be seen urgently?",
+  "UNKNOWN": "My report did not show a reference range for {test}. What range should I compare my result of {value} {unit} against?",
+  "trend": "My {test} changed from {first_value} {unit} on {first_date} to {last_value} {unit} on {last_date}. What does this change mean for me?",
+  "general_questions": [
+    "Are there any other tests I should have?",
+    "When should I repeat these tests?",
+    "Is there anything in my diet, activity, or daily routine I should discuss with you?",
+    "Should I bring any of these results to my next appointment with another specialist?"
+  ]
+}

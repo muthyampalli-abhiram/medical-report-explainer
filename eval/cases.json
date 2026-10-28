@@ -1,0 +1,486 @@
+{
+  "flag_cases": [
+    {
+      "test": "Fasting Glucose",
+      "value": 69.9,
+      "unit": "mg/dL",
+      "ref_text": "70 - 99",
+      "expected_flag": "LOW",
+      "reasoning": "Just below lower bound 70.0 for inclusive interval 70 - 99."
+    },
+    {
+      "test": "Fasting Glucose",
+      "value": 70.0,
+      "unit": "mg/dL",
+      "ref_text": "70 - 99",
+      "expected_flag": "NORMAL",
+      "reasoning": "Exactly at lower bound 70.0 for inclusive interval 70 - 99."
+    },
+    {
+      "test": "Fasting Glucose",
+      "value": 85.0,
+      "unit": "mg/dL",
+      "ref_text": "70 - 99",
+      "expected_flag": "NORMAL",
+      "reasoning": "Well within bounds 70 - 99."
+    },
+    {
+      "test": "Fasting Glucose",
+      "value": 99.0,
+      "unit": "mg/dL",
+      "ref_text": "70 - 99",
+      "expected_flag": "NORMAL",
+      "reasoning": "Exactly at upper bound 99.0 for inclusive interval 70 - 99."
+    },
+    {
+      "test": "Fasting Glucose",
+      "value": 99.1,
+      "unit": "mg/dL",
+      "ref_text": "70 - 99",
+      "expected_flag": "HIGH",
+      "reasoning": "Just above upper bound 99.0 for inclusive interval 70 - 99."
+    },
+    {
+      "test": "Total Cholesterol",
+      "value": 199.9,
+      "unit": "mg/dL",
+      "ref_text": "< 200",
+      "expected_flag": "NORMAL",
+      "reasoning": "Below strict threshold 200."
+    },
+    {
+      "test": "Total Cholesterol",
+      "value": 200.0,
+      "unit": "mg/dL",
+      "ref_text": "< 200",
+      "expected_flag": "HIGH",
+      "reasoning": "Strict inequality '< 200' classifies value equal to threshold (200.0) as HIGH."
+    },
+    {
+      "test": "Total Cholesterol",
+      "value": 200.1,
+      "unit": "mg/dL",
+      "ref_text": "< 200",
+      "expected_flag": "HIGH",
+      "reasoning": "Above strict threshold 200."
+    },
+    {
+      "test": "Total Cholesterol",
+      "value": 199.9,
+      "unit": "mg/dL",
+      "ref_text": "<= 200",
+      "expected_flag": "NORMAL",
+      "reasoning": "Below inclusive threshold 200."
+    },
+    {
+      "test": "Total Cholesterol",
+      "value": 200.0,
+      "unit": "mg/dL",
+      "ref_text": "<= 200",
+      "expected_flag": "NORMAL",
+      "reasoning": "Inclusive inequality '<= 200' classifies value equal to threshold (200.0) as NORMAL."
+    },
+    {
+      "test": "Total Cholesterol",
+      "value": 200.1,
+      "unit": "mg/dL",
+      "ref_text": "<= 200",
+      "expected_flag": "HIGH",
+      "reasoning": "Above inclusive threshold 200."
+    },
+    {
+      "test": "HDL Cholesterol",
+      "value": 39.9,
+      "unit": "mg/dL",
+      "ref_text": "> 40",
+      "expected_flag": "LOW",
+      "reasoning": "Below strict threshold 40."
+    },
+    {
+      "test": "HDL Cholesterol",
+      "value": 40.0,
+      "unit": "mg/dL",
+      "ref_text": "> 40",
+      "expected_flag": "LOW",
+      "reasoning": "Strict inequality '> 40' classifies value equal to threshold (40.0) as LOW."
+    },
+    {
+      "test": "HDL Cholesterol",
+      "value": 40.1,
+      "unit": "mg/dL",
+      "ref_text": "> 40",
+      "expected_flag": "NORMAL",
+      "reasoning": "Above strict threshold 40."
+    },
+    {
+      "test": "HDL Cholesterol",
+      "value": 39.9,
+      "unit": "mg/dL",
+      "ref_text": ">= 40",
+      "expected_flag": "LOW",
+      "reasoning": "Below inclusive threshold 40."
+    },
+    {
+      "test": "HDL Cholesterol",
+      "value": 40.0,
+      "unit": "mg/dL",
+      "ref_text": ">= 40",
+      "expected_flag": "NORMAL",
+      "reasoning": "Inclusive inequality '>= 40' classifies value equal to threshold (40.0) as NORMAL."
+    },
+    {
+      "test": "HDL Cholesterol",
+      "value": 40.1,
+      "unit": "mg/dL",
+      "ref_text": ">= 40",
+      "expected_flag": "NORMAL",
+      "reasoning": "Above inclusive threshold 40."
+    },
+    {
+      "test": "Fasting Glucose",
+      "value": 40.0,
+      "unit": "mg/dL",
+      "ref_text": "70 - 99",
+      "expected_flag": "LOW",
+      "reasoning": "Critical low rule is value < 40.0; at 40.0 it is below range (70-99) but not critical."
+    },
+    {
+      "test": "Fasting Glucose",
+      "value": 39.9,
+      "unit": "mg/dL",
+      "ref_text": "70 - 99",
+      "expected_flag": "CRITICAL_LOW",
+      "reasoning": "Value 39.9 < 40.0 critical low threshold triggers CRITICAL_LOW override."
+    },
+    {
+      "test": "Fasting Glucose",
+      "value": 400.0,
+      "unit": "mg/dL",
+      "ref_text": "70 - 99",
+      "expected_flag": "HIGH",
+      "reasoning": "Critical high rule is value > 400.0; at 400.0 it is above range (70-99) but not critical."
+    },
+    {
+      "test": "Fasting Glucose",
+      "value": 400.1,
+      "unit": "mg/dL",
+      "ref_text": "70 - 99",
+      "expected_flag": "CRITICAL_HIGH",
+      "reasoning": "Value 400.1 > 400.0 critical high threshold triggers CRITICAL_HIGH override."
+    },
+    {
+      "test": "Potassium",
+      "value": 2.5,
+      "unit": "mmol/L",
+      "ref_text": "3.5 - 5.0",
+      "expected_flag": "LOW",
+      "reasoning": "Critical low rule is value < 2.5; at 2.5 it is below range (3.5-5.0) but not critical."
+    },
+    {
+      "test": "Potassium",
+      "value": 2.4,
+      "unit": "mmol/L",
+      "ref_text": "3.5 - 5.0",
+      "expected_flag": "CRITICAL_LOW",
+      "reasoning": "Value 2.4 < 2.5 critical low threshold triggers CRITICAL_LOW override."
+    },
+    {
+      "test": "Potassium",
+      "value": 6.5,
+      "unit": "mmol/L",
+      "ref_text": "3.5 - 5.0",
+      "expected_flag": "HIGH",
+      "reasoning": "Critical high rule is value > 6.5; at 6.5 it is above range (3.5-5.0) but not critical."
+    },
+    {
+      "test": "Potassium",
+      "value": 6.6,
+      "unit": "mmol/L",
+      "ref_text": "3.5 - 5.0",
+      "expected_flag": "CRITICAL_HIGH",
+      "reasoning": "Value 6.6 > 6.5 critical high threshold triggers CRITICAL_HIGH override."
+    },
+    {
+      "test": "Hemoglobin",
+      "value": 7.0,
+      "unit": "g/dL",
+      "ref_text": "13.0 - 17.0",
+      "expected_flag": "LOW",
+      "reasoning": "Critical low rule is value < 7.0; at 7.0 it is below range (13.0-17.0) but not critical."
+    },
+    {
+      "test": "Hemoglobin",
+      "value": 6.9,
+      "unit": "g/dL",
+      "ref_text": "13.0 - 17.0",
+      "expected_flag": "CRITICAL_LOW",
+      "reasoning": "Value 6.9 < 7.0 critical low threshold triggers CRITICAL_LOW override."
+    },
+    {
+      "test": "Hemoglobin",
+      "value": 20.0,
+      "unit": "g/dL",
+      "ref_text": "13.0 - 17.0",
+      "expected_flag": "HIGH",
+      "reasoning": "Critical high rule is value > 20.0; at 20.0 it is above range (13.0-17.0) but not critical."
+    },
+    {
+      "test": "Hemoglobin",
+      "value": 20.1,
+      "unit": "g/dL",
+      "ref_text": "13.0 - 17.0",
+      "expected_flag": "CRITICAL_HIGH",
+      "reasoning": "Value 20.1 > 20.0 critical high threshold triggers CRITICAL_HIGH override."
+    },
+    {
+      "test": "Fasting Glucose",
+      "value": 35.0,
+      "unit": "mg/dL",
+      "ref_text": "",
+      "expected_flag": "CRITICAL_LOW",
+      "reasoning": "Critical override applies even in the absence of a printed reference range."
+    },
+    {
+      "test": "Fasting Glucose",
+      "value": 450.0,
+      "unit": "mg/dL",
+      "ref_text": "",
+      "expected_flag": "CRITICAL_HIGH",
+      "reasoning": "Critical high override applies even without a printed reference range."
+    },
+    {
+      "test": "Potassium",
+      "value": 2.0,
+      "unit": "mmol/L",
+      "ref_text": null,
+      "expected_flag": "CRITICAL_LOW",
+      "reasoning": "Critical low override applies even when reference range is null."
+    },
+    {
+      "test": "Potassium",
+      "value": 7.0,
+      "unit": "mmol/L",
+      "ref_text": null,
+      "expected_flag": "CRITICAL_HIGH",
+      "reasoning": "Critical high override applies even when reference range is null."
+    },
+    {
+      "test": "Hemoglobin",
+      "value": 5.5,
+      "unit": "g/dL",
+      "ref_text": null,
+      "expected_flag": "CRITICAL_LOW",
+      "reasoning": "Critical low override applies even when reference range is null."
+    },
+    {
+      "test": "Hemoglobin",
+      "value": 22.0,
+      "unit": "g/dL",
+      "ref_text": null,
+      "expected_flag": "CRITICAL_HIGH",
+      "reasoning": "Critical high override applies even when reference range is null."
+    },
+    {
+      "test": "Urine Protein",
+      "value": "Negative",
+      "unit": "",
+      "ref_text": "Negative",
+      "expected_flag": "NORMAL",
+      "reasoning": "Non-numeric result matching non-numeric reference range is NORMAL."
+    },
+    {
+      "test": "Urine Protein",
+      "value": "Positive",
+      "unit": "",
+      "ref_text": "Negative",
+      "expected_flag": "UNKNOWN",
+      "reasoning": "Non-numeric result differing from reference range yields UNKNOWN with review warning."
+    },
+    {
+      "test": "Urine Protein",
+      "value": "Trace",
+      "unit": "",
+      "ref_text": "Negative",
+      "expected_flag": "UNKNOWN",
+      "reasoning": "Non-numeric result differing from reference range yields UNKNOWN with review warning."
+    },
+    {
+      "test": "Fasting Glucose",
+      "value": 90.0,
+      "unit": "mg/dL",
+      "ref_text": null,
+      "expected_flag": "UNKNOWN",
+      "reasoning": "Non-critical value with no reference range cannot be flagged and defaults to UNKNOWN."
+    },
+    {
+      "test": "Total Cholesterol",
+      "value": 220.0,
+      "unit": "mg/dL",
+      "ref_text": "",
+      "expected_flag": "UNKNOWN",
+      "reasoning": "Biomarker without critical thresholds and empty reference range defaults to UNKNOWN."
+    }
+  ],
+  "unit_cases": [
+    {
+      "test": "Fasting Glucose",
+      "value": 5.6,
+      "unit": "mmol/L",
+      "expected_value": 100.89,
+      "expected_unit": "mg/dL",
+      "tolerance": 0.05
+    },
+    {
+      "test": "Total Cholesterol",
+      "value": 5.2,
+      "unit": "mmol/L",
+      "expected_value": 201.08,
+      "expected_unit": "mg/dL",
+      "tolerance": 0.05
+    },
+    {
+      "test": "Triglycerides",
+      "value": 1.7,
+      "unit": "mmol/L",
+      "expected_value": 150.57,
+      "expected_unit": "mg/dL",
+      "tolerance": 0.05
+    },
+    {
+      "test": "Hemoglobin",
+      "value": 130.0,
+      "unit": "g/L",
+      "expected_value": 13.0,
+      "expected_unit": "g/dL",
+      "tolerance": 0.01
+    },
+    {
+      "test": "HbA1c",
+      "value": 53.0,
+      "unit": "mmol/mol",
+      "expected_value": 7.0,
+      "expected_unit": "%",
+      "tolerance": 0.01
+    },
+    {
+      "test": "HbA1c",
+      "value": 48.0,
+      "unit": "mmol/mol",
+      "expected_value": 6.54,
+      "expected_unit": "%",
+      "tolerance": 0.05
+    },
+    {
+      "test": "Potassium",
+      "value": 5.0,
+      "unit": "mEq/L",
+      "expected_value": 5.0,
+      "expected_unit": "mmol/L",
+      "tolerance": 0.01
+    },
+    {
+      "test": "LDL Cholesterol",
+      "value": 3.0,
+      "unit": "mmol/L",
+      "expected_value": 116.01,
+      "expected_unit": "mg/dL",
+      "tolerance": 0.01
+    },
+    {
+      "test": "HDL Cholesterol",
+      "value": 1.2,
+      "unit": "mmol/L",
+      "expected_value": 46.4,
+      "expected_unit": "mg/dL",
+      "tolerance": 0.01
+    },
+    {
+      "test": "Fasting Glucose",
+      "value": 7.0,
+      "unit": "mmol/L",
+      "expected_value": 126.11,
+      "expected_unit": "mg/dL",
+      "tolerance": 0.01
+    },
+    {
+      "test": "Fasting Glucose",
+      "value": 95.0,
+      "unit": "mg/dL",
+      "expected_value": 95.0,
+      "expected_unit": "mg/dL",
+      "tolerance": 0.01
+    },
+    {
+      "test": "Hemoglobin",
+      "value": 14.5,
+      "unit": "g/dL",
+      "expected_value": 14.5,
+      "expected_unit": "g/dL",
+      "tolerance": 0.01
+    },
+    {
+      "test": "HbA1c",
+      "value": 5.6,
+      "unit": "%",
+      "expected_value": 5.6,
+      "expected_unit": "%",
+      "tolerance": 0.01
+    },
+    {
+      "test": "Potassium",
+      "value": 4.2,
+      "unit": "mmol/L",
+      "expected_value": 4.2,
+      "expected_unit": "mmol/L",
+      "tolerance": 0.01
+    },
+    {
+      "test": "Total Cholesterol",
+      "value": 180.0,
+      "unit": "mg/dL",
+      "expected_value": 180.0,
+      "expected_unit": "mg/dL",
+      "tolerance": 0.01
+    },
+    {
+      "test": "Fasting Glucose",
+      "value": 100.0,
+      "unit": "oz/gal",
+      "expected_value": null,
+      "expected_unit": null,
+      "tolerance": null
+    },
+    {
+      "test": "Hemoglobin",
+      "value": 15.0,
+      "unit": "cups",
+      "expected_value": null,
+      "expected_unit": null,
+      "tolerance": null
+    },
+    {
+      "test": "Urine Protein",
+      "value": 1.0,
+      "unit": "mg/dL",
+      "expected_value": null,
+      "expected_unit": null,
+      "tolerance": null
+    },
+    {
+      "test": "Potassium",
+      "value": 4.0,
+      "unit": "IU/L",
+      "expected_value": null,
+      "expected_unit": null,
+      "tolerance": null
+    },
+    {
+      "test": "Nonexistent Biomarker",
+      "value": 50.0,
+      "unit": "mg/dL",
+      "expected_value": null,
+      "expected_unit": null,
+      "tolerance": null
+    }
+  ]
+}

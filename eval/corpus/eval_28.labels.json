@@ -1,0 +1,80 @@
+{
+  "report_date": "2026-09-04",
+  "lab_name": "CarePoint Clinical Diagnostics",
+  "layout": "reordered_table",
+  "results": [
+    {
+      "raw_name": "LDL-C",
+      "canonical_name": "LDL Cholesterol",
+      "value": 2.0,
+      "value_text": null,
+      "unit_original": "mmol/L",
+      "ref_text": "<= 2.6",
+      "ref_low": null,
+      "ref_high": 2.6,
+      "expected_value_canonical": 77.34,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "NORMAL"
+    },
+    {
+      "raw_name": "K+",
+      "canonical_name": "Potassium",
+      "value": 4.6,
+      "value_text": null,
+      "unit_original": "mEq/L",
+      "ref_text": "3.5-5",
+      "ref_low": 3.5,
+      "ref_high": 5.0,
+      "expected_value_canonical": 4.6,
+      "expected_unit_canonical": "mmol/L",
+      "expected_flag": "NORMAL"
+    },
+    {
+      "raw_name": "HDL-C",
+      "canonical_name": "HDL Cholesterol",
+      "value": 0.5,
+      "value_text": null,
+      "unit_original": "mmol/L",
+      "ref_text": "> 1",
+      "ref_low": 1.0,
+      "ref_high": null,
+      "expected_value_canonical": 19.34,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "LOW"
+    },
+    {
+      "raw_name": "Triglycerides",
+      "canonical_name": "Triglycerides",
+      "value": 2.1,
+      "value_text": null,
+      "unit_original": "mmol/L",
+      "ref_text": "< 1.7",
+      "ref_low": null,
+      "ref_high": 1.7,
+      "expected_value_canonical": 186.0,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "HIGH"
+    },
+    {
+      "raw_name": "Fasting Blood Glucose",
+      "canonical_name": "Fasting Glucose",
+      "value": 4.8,
+      "value_text": null,
+      "unit_original": "mmol/L",
+      "ref_text": "3.9-5.5",
+      "ref_low": 3.9,
+      "ref_high": 5.5,
+      "expected_value_canonical": 86.48,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "NORMAL"
+    }
+  ],
+  "planted_pii": [
+    "Sunita Patel",
+    "ID: 5192038",
+    "+91 94480 33445",
+    "sunita.patel84@example.org",
+    "3910 4820 1928",
+    "23 Ashram Road, Navrangpura, Ahmedabad 380009"
+  ]
+}

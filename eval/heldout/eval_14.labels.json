@@ -1,0 +1,67 @@
+{
+  "report_date": "2026-05-16",
+  "lab_name": "Nova Medical Laboratory",
+  "layout": "plain_lines",
+  "results": [
+    {
+      "raw_name": "Potassium",
+      "canonical_name": "Potassium",
+      "value": 2.8,
+      "value_text": null,
+      "unit_original": "mEq/L",
+      "ref_text": "3.5-5",
+      "ref_low": 3.5,
+      "ref_high": 5.0,
+      "expected_value_canonical": 2.8,
+      "expected_unit_canonical": "mmol/L",
+      "expected_flag": "LOW"
+    },
+    {
+      "raw_name": "LDL Cholesterol Direct",
+      "canonical_name": "LDL Cholesterol",
+      "value": 2.1,
+      "value_text": null,
+      "unit_original": "mmol/L",
+      "ref_text": "< 2.6",
+      "ref_low": null,
+      "ref_high": 2.6,
+      "expected_value_canonical": 81.21,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "NORMAL"
+    },
+    {
+      "raw_name": "Urine Albumin",
+      "canonical_name": "Urine Protein",
+      "value": null,
+      "value_text": "Negative",
+      "unit_original": null,
+      "ref_text": "Negative",
+      "ref_low": null,
+      "ref_high": null,
+      "expected_value_canonical": null,
+      "expected_unit_canonical": null,
+      "expected_flag": "NORMAL"
+    },
+    {
+      "raw_name": "Cholesterol",
+      "canonical_name": "Total Cholesterol",
+      "value": 3.6,
+      "value_text": null,
+      "unit_original": "mmol/L",
+      "ref_text": "<= 5.2",
+      "ref_low": null,
+      "ref_high": 5.2,
+      "expected_value_canonical": 139.21,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "NORMAL"
+    }
+  ],
+  "planted_pii": [
+    "Vikram Malhotra",
+    "ID: 4091827",
+    "+91 98100 55667",
+    "v.malhotra77@example.com",
+    "9182 3019 4820",
+    "102 Connaught Place, Block B, New Delhi 110001"
+  ]
+}

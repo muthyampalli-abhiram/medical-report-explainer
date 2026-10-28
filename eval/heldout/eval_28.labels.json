@@ -1,0 +1,67 @@
+{
+  "report_date": "2026-09-04",
+  "lab_name": "CarePoint Clinical Diagnostics",
+  "layout": "reordered_table",
+  "results": [
+    {
+      "raw_name": "Hb",
+      "canonical_name": "Hemoglobin",
+      "value": 151.0,
+      "value_text": null,
+      "unit_original": "g/L",
+      "ref_text": "130 - 170",
+      "ref_low": 130.0,
+      "ref_high": 170.0,
+      "expected_value_canonical": 15.1,
+      "expected_unit_canonical": "g/dL",
+      "expected_flag": "NORMAL"
+    },
+    {
+      "raw_name": "HDL",
+      "canonical_name": "HDL Cholesterol",
+      "value": 0.8,
+      "value_text": null,
+      "unit_original": "mmol/L",
+      "ref_text": ">= 1",
+      "ref_low": 1.0,
+      "ref_high": null,
+      "expected_value_canonical": 30.94,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "LOW"
+    },
+    {
+      "raw_name": "LDL-C",
+      "canonical_name": "LDL Cholesterol",
+      "value": 3.2,
+      "value_text": null,
+      "unit_original": "mmol/L",
+      "ref_text": "<= 2.6",
+      "ref_low": null,
+      "ref_high": 2.6,
+      "expected_value_canonical": 123.74,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "HIGH"
+    },
+    {
+      "raw_name": "Hb A1c",
+      "canonical_name": "HbA1c",
+      "value": 29.0,
+      "value_text": null,
+      "unit_original": "mmol/mol",
+      "ref_text": "20 - 42",
+      "ref_low": 20.0,
+      "ref_high": 42.0,
+      "expected_value_canonical": 4.8,
+      "expected_unit_canonical": "%",
+      "expected_flag": "NORMAL"
+    }
+  ],
+  "planted_pii": [
+    "Sunita Patel",
+    "ID: 5192038",
+    "+91 94480 33445",
+    "sunita.patel84@example.org",
+    "3910 4820 1928",
+    "23 Ashram Road, Navrangpura, Ahmedabad 380009"
+  ]
+}

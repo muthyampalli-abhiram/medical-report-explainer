@@ -1,0 +1,55 @@
+{
+  "report_date": "2026-04-20",
+  "lab_name": "Sample Diagnostics Lab",
+  "results": [
+    {
+      "test_name_raw": "Glycosylated Hb",
+      "value": 6.9,
+      "unit": "%",
+      "ref_low": 4.0,
+      "ref_high": 5.6
+    },
+    {
+      "test_name_raw": "FBS",
+      "value": 110.0,
+      "unit": "mg/dL",
+      "ref_low": 70.0,
+      "ref_high": 99.0
+    },
+    {
+      "test_name_raw": "Cholesterol Total",
+      "value": 195.0,
+      "unit": "mg/dL",
+      "ref_low": null,
+      "ref_high": 200.0
+    },
+    {
+      "test_name_raw": "LDL-C",
+      "value": 115.0,
+      "unit": "mg/dL",
+      "ref_low": null,
+      "ref_high": 100.0
+    },
+    {
+      "test_name_raw": "HDL-C",
+      "value": 48.0,
+      "unit": "mg/dL",
+      "ref_low": 40.0,
+      "ref_high": null
+    },
+    {
+      "test_name_raw": "TG",
+      "value": 140.0,
+      "unit": "mg/dL",
+      "ref_low": null,
+      "ref_high": 150.0
+    },
+    {
+      "test_name_raw": "Haemoglobin",
+      "value": 14.2,
+      "unit": "g/dL",
+      "ref_low": 13.0,
+      "ref_high": 17.0
+    }
+  ]
+}

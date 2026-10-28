@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Report Explainer</title>
+  <meta name="description" content="Local-first medical report explainer that helps you understand lab results and prepare questions for your doctor.">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <!-- Persistent Disclaimer Banner -->
+  <aside class="disclaimer-banner" role="note" aria-label="Medical Disclaimer">
+    <div class="banner-inner">
+      <span class="banner-icon" aria-hidden="true">&#9888;</span>
+      <p class="banner-text">This tool explains lab reports in general terms and does not provide a diagnosis or medical advice. Always discuss your results with your doctor.</p>
+    </div>
+  </aside>
+
+  <div class="app-layout">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="header-inner">
+        <div class="brand">
+          <span class="brand-badge" aria-hidden="true">Rx</span>
+          <h1>Medical Report Explainer</h1>
+        </div>
+        <p class="header-tagline">Private, on-device analysis and plain-language summaries for your lab results.</p>
+      </div>
+    </header>
+
+    <!-- Privacy Note -->
+    <section class="privacy-note-card" aria-label="Privacy Information">
+      <div class="privacy-note-inner">
+        <span class="privacy-icon" aria-hidden="true">&#128274;</span>
+        <p class="privacy-text">Your reports are processed and stored on this computer. Uploaded files are deleted right after reading. If an AI model is enabled, only test names (never your values or personal details) are sent to it to write general descriptions.</p>
+      </div>
+    </section>
+
+    <!-- Profile Management Bar -->
+    <section class="profile-bar" aria-label="User Profile Controls">
+      <div class="profile-bar-inner">
+        <div class="profile-select-group">
+          <label for="profile-select" class="form-label">Active Profile:</label>
+          <select id="profile-select" class="form-select" aria-label="Select active profile"></select>
+        </div>
+
+        <form id="add-profile-form" class="add-profile-form" novalidate>
+          <div class="form-field">
+            <label for="new-profile-input" class="form-label">Add profile:</label>
+            <div class="input-with-button">
+              <input type="text" id="new-profile-input" class="form-input" maxlength="40" placeholder="e.g. Me, Mom" aria-describedby="profile-hint" autocomplete="off">
+              <button type="submit" id="add-profile-btn" class="btn btn-secondary">Add</button>
+            </div>
+            <span id="profile-hint" class="form-hint">Use a nickname, not your full name</span>
+          </div>
+        </form>
+
+        <div class="profile-danger-group">
+          <button type="button" id="delete-profile-data-btn" class="btn btn-danger-outline">Delete all data for this profile</button>
+        </div>
+      </div>
+
+      <!-- Profile Data Deletion Confirmation Dialog -->
+      <div id="delete-confirm-box" class="confirm-box hidden" role="alertdialog" aria-labelledby="delete-confirm-msg">
+        <div class="confirm-box-content">
+          <p id="delete-confirm-msg" class="confirm-text">Are you sure you want to delete all reports and data for this profile? This action cannot be undone.</p>
+          <div class="confirm-actions">
+            <button type="button" id="confirm-delete-data-btn" class="btn btn-danger">Yes, delete all data</button>
+            <button type="button" id="cancel-delete-data-btn" class="btn btn-secondary">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Navigation Tabs -->
+    <nav class="tabs-nav" role="tablist" aria-label="Main sections">
+      <button type="button" role="tab" id="tab-reports-btn" class="tab-button tab-active" aria-selected="true" aria-controls="tab-reports" tabindex="0">My Reports</button>
+      <button type="button" role="tab" id="tab-prescription-btn" class="tab-button" aria-selected="false" aria-controls="tab-prescription" tabindex="-1">Prescription</button>
+    </nav>
+
+    <!-- Aria-Live Status Region -->
+    <div id="aria-status-region" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+    <div id="toast-notification" class="toast-notification hidden" role="status"></div>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <!-- TAB 1: MY REPORTS -->
+      <section id="tab-reports" class="tab-panel" role="tabpanel" aria-labelledby="tab-reports-btn">
+        <!-- Upload Card -->
+        <div class="card upload-card no-print">
+          <h2 class="card-title">Upload Lab Report</h2>
+          <p class="card-subtitle">Supported formats: PDF, PNG, JPEG (up to 10 MB). Processed completely on your machine.</p>
+
+          <div id="report-drop-zone" class="drop-zone" tabindex="0" role="region" aria-label="Drag and drop lab report here">
+            <div class="drop-zone-content">
+              <span class="drop-icon" aria-hidden="true">&#128196;</span>
+              <p class="drop-prompt"><strong>Drag &amp; drop your report here</strong>, or browse your files</p>
+              <div class="file-picker-wrapper">
+                <label for="report-file-input" class="btn btn-outline file-picker-label">Choose Report File</label>
+                <input type="file" id="report-file-input" class="file-input-hidden" accept=".pdf,.jpg,.jpeg,.png">
+              </div>
+              <p id="report-selected-filename" class="selected-filename hidden"></p>
+            </div>
+          </div>
+
+          <div class="upload-actions">
+            <button type="button" id="upload-report-btn" class="btn btn-primary" disabled>Upload &amp; Analyze</button>
+          </div>
+
+          <div id="upload-loading-status" class="loading-status hidden" aria-live="polite">
+            <span class="spinner" aria-hidden="true"></span>
+            <span id="upload-status-text" class="status-msg">Reading your report...</span>
+          </div>
+
+          <div id="upload-error-box" class="error-banner hidden" role="alert">
+            <div class="error-banner-content">
+              <span class="error-icon" aria-hidden="true">&#9888;</span>
+              <p id="upload-error-text" class="error-message"></p>
+            </div>
+            <button type="button" id="open-existing-report-btn" class="btn btn-secondary hidden">Open existing report</button>
+          </div>
+        </div>
+
+        <!-- Reports List for Active Profile -->
+        <div class="card reports-list-card no-print">
+          <div class="card-header-row">
+            <h2 class="card-title">Reports in Active Profile</h2>
+            <button type="button" id="refresh-reports-btn" class="btn btn-text" aria-label="Refresh reports list">&#8635; Refresh</button>
+          </div>
+          <div id="reports-list-container" class="reports-list" role="list">
+            <p class="empty-state">No reports uploaded yet for this profile. Upload a report above to get started.</p>
+          </div>
+        </div>
+
+        <!-- Report View Details -->
+        <article id="report-view-container" class="card report-view-card hidden" aria-labelledby="report-main-heading">
+          <!-- Print Summary Action -->
+          <div class="report-top-actions no-print">
+            <button type="button" id="print-summary-btn" class="btn btn-outline">&#128438; Print summary</button>
+          </div>
+
+          <!-- Report Header -->
+          <div class="report-header">
+            <h2 id="report-main-heading" tabindex="-1">Lab Report Summary</h2>
+            <div class="report-meta-row">
+              <div class="meta-item">
+                <span class="meta-label">Date:</span>
+                <span id="report-date-value" class="meta-value"></span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Laboratory:</span>
+                <span id="report-lab-value" class="meta-value"></span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Total Results:</span>
+                <span id="report-total-count" class="badge badge-neutral"></span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Abnormal:</span>
+                <span id="report-abnormal-count" class="badge badge-warning"></span>
+              </div>
+            </div>
+            <div class="extraction-badge-wrapper">
+              <span id="report-extraction-badge" class="badge badge-info"></span>
+            </div>
+          </div>
+
+          <!-- Critical Results Escalation Banner -->
+          <div id="critical-alert-banner" class="critical-banner hidden" role="alert">
+            <div class="critical-banner-content">
+              <span class="critical-symbol" aria-hidden="true">&#8252;</span>
+              <div class="critical-text-wrapper">
+                <strong class="critical-heading">Attention Needed:</strong>
+                <p id="critical-banner-message" class="critical-message"></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Warnings List -->
+          <div id="report-warnings-container" class="warnings-card hidden">
+            <h3 class="section-subtitle">&#9888; Extraction Warnings</h3>
+            <ul id="report-warnings-list" class="warnings-list"></ul>
+          </div>
+
+          <!-- Results Table -->
+          <section class="report-section" aria-label="Laboratory Results">
+            <h3 class="section-title">Test Results</h3>
+            <div class="table-responsive">
+              <table id="results-table" class="data-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Test</th>
+                    <th scope="col">Your result</th>
+                    <th scope="col">Reference range</th>
+                    <th scope="col">Status</th>
+                  </tr>
+                </thead>
+                <tbody id="results-table-body"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- Explanation Section -->
+          <section id="explanation-section" class="report-section" aria-label="Explanation of Results" lang="en">
+            <div class="section-header-row">
+              <h3 class="section-title">Explanation</h3>
+              <div class="lang-selector-group no-print">
+                <label for="explanation-lang-select" class="form-label">Explanation language</label>
+                <select id="explanation-lang-select" class="form-select">
+                  <option value="en">English</option>
+                  <option value="hi">हिन्दी</option>
+                  <option value="te">తెలుగు</option>
+                </select>
+              </div>
+            </div>
+            <p class="lang-hint-line no-print">Doctor questions are shown in English so you can share them with your doctor.</p>
+            <div id="explanation-draft-notice" class="draft-notice-banner hidden" role="note"></div>
+            <div id="explanation-overall-notice" class="explanation-notice"></div>
+            <div id="explanation-items-list" class="explanation-grid"></div>
+            <p id="explanation-disclaimer" class="disclaimer-note"></p>
+          </section>
+
+          <!-- Questions for Doctor Section -->
+          <section id="questions-section" class="report-section" aria-label="Questions for Your Doctor">
+            <div class="section-header-with-action">
+              <h3 class="section-title">Questions for your doctor</h3>
+              <button type="button" id="copy-questions-btn" class="btn btn-secondary no-print">&#128203; Copy to clipboard</button>
+            </div>
+            <p id="copy-status-msg" class="form-hint" aria-live="polite"></p>
+
+            <div class="questions-group">
+              <h4 class="subsection-title">Result Questions</h4>
+              <ol id="doctor-questions-ordered" class="numbered-list"></ol>
+            </div>
+
+            <div id="trend-notes-wrapper" class="questions-group hidden">
+              <h4 class="subsection-title">Trend Observations</h4>
+              <ul id="doctor-trend-notes-list" class="bullet-list"></ul>
+            </div>
+
+            <div id="general-questions-wrapper" class="questions-group hidden">
+              <h4 class="subsection-title">General Discussion Points</h4>
+              <ul id="doctor-general-questions-list" class="bullet-list"></ul>
+            </div>
+          </section>
+
+          <!-- Trends Section (Chart + Data Table) -->
+          <section id="trends-section" class="report-section no-print" aria-label="Biomarker Trends Over Time">
+            <h3 class="section-title">Trends</h3>
+            <div class="trend-select-control">
+              <label for="trend-test-select" class="form-label">Select Biomarker:</label>
+              <select id="trend-test-select" class="form-select"></select>
+            </div>
+
+            <div id="trend-single-point-note" class="info-note hidden" role="note">
+              <span class="info-icon" aria-hidden="true">&#8505;</span>
+              <p class="info-text">Upload another report to see a trend.</p>
+            </div>
+
+            <div id="trend-chart-container" class="chart-container">
+              <div id="trend-plot" class="plot-target"></div>
+            </div>
+
+            <div class="trend-table-wrapper">
+              <h4 class="subsection-title">Historical Data Points</h4>
+              <div class="table-responsive">
+                <table id="trend-data-table" class="data-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Date</th>
+                      <th scope="col">Result</th>
+                      <th scope="col">Unit</th>
+                      <th scope="col">Reference range</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody id="trend-data-table-body"></tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <!-- Print-Only Metadata Footer -->
+          <div class="print-meta print-only">
+            <p id="print-date-line" class="print-date"></p>
+          </div>
+        </article>
+      </section>
+
+      <!-- TAB 2: PRESCRIPTION -->
+      <section id="tab-prescription" class="tab-panel hidden" role="tabpanel" aria-labelledby="tab-prescription-btn">
+        <!-- Prescription Note -->
+        <div class="info-callout" role="note">
+          <span class="callout-icon" aria-hidden="true">&#9432;</span>
+          <p class="callout-text">This prescription summary is not saved.</p>
+        </div>
+
+        <!-- Prescription Upload Card -->
+        <div class="card upload-card no-print">
+          <h2 class="card-title">Upload Prescription PDF</h2>
+          <p class="card-subtitle">Upload a digital prescription in PDF format for deterministic medication and dosage summarization.</p>
+
+          <div id="prescription-drop-zone" class="drop-zone" tabindex="0" role="region" aria-label="Drag and drop prescription PDF here">
+            <div class="drop-zone-content">
+              <span class="drop-icon" aria-hidden="true">&#128221;</span>
+              <p class="drop-prompt"><strong>Drag &amp; drop prescription PDF here</strong>, or browse your files</p>
+              <div class="file-picker-wrapper">
+                <label for="prescription-file-input" class="btn btn-outline file-picker-label">Choose PDF File</label>
+                <input type="file" id="prescription-file-input" class="file-input-hidden" accept=".pdf">
+              </div>
+              <p id="prescription-selected-filename" class="selected-filename hidden"></p>
+            </div>
+          </div>
+
+          <div class="upload-actions">
+            <button type="button" id="upload-prescription-btn" class="btn btn-primary" disabled>Parse Prescription</button>
+          </div>
+
+          <div id="prescription-loading-status" class="loading-status hidden" aria-live="polite">
+            <span class="spinner" aria-hidden="true"></span>
+            <span class="status-msg">Reading your prescription...</span>
+          </div>
+
+          <div id="prescription-error-box" class="error-banner hidden" role="alert">
+            <div class="error-banner-content">
+              <span class="error-icon" aria-hidden="true">&#9888;</span>
+              <p id="prescription-error-text" class="error-message"></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prescription Summary View -->
+        <article id="prescription-view-container" class="card prescription-view-card hidden" aria-labelledby="prescription-heading">
+          <div class="report-header">
+            <h2 id="prescription-heading" tabindex="-1">Prescription Summary</h2>
+          </div>
+
+          <!-- Medication Cards -->
+          <section class="report-section" aria-label="Extracted Medications">
+            <h3 class="section-title">Medications</h3>
+            <div id="medications-card-list" class="medications-grid"></div>
+          </section>
+
+          <!-- Other Lines -->
+          <section id="prescription-other-lines-section" class="report-section hidden" aria-label="Other Extracted Lines">
+            <h3 class="section-title">Other Notes &amp; Lines</h3>
+            <ul id="prescription-other-lines-list" class="bullet-list"></ul>
+          </section>
+
+          <!-- Warnings -->
+          <section id="prescription-warnings-section" class="warnings-card hidden" aria-label="Prescription Processing Warnings">
+            <h3 class="section-subtitle">&#9888; Warnings</h3>
+            <ul id="prescription-warnings-list" class="warnings-list"></ul>
+          </section>
+
+          <!-- Prescription Disclaimer -->
+          <section class="report-section" aria-label="Prescription Disclaimer">
+            <p id="prescription-disclaimer-text" class="disclaimer-note"></p>
+          </section>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="/static/app.js" defer></script>
+</body>
+</html>

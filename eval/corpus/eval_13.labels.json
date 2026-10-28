@@ -1,0 +1,119 @@
+{
+  "report_date": "13-Apr-2026",
+  "lab_name": "CarePoint Clinical Diagnostics",
+  "layout": "plain_lines",
+  "results": [
+    {
+      "raw_name": "TG",
+      "canonical_name": "Triglycerides",
+      "value": 185.3,
+      "value_text": null,
+      "unit_original": "mg/dL",
+      "ref_text": "< 150",
+      "ref_low": null,
+      "ref_high": 150.0,
+      "expected_value_canonical": 185.3,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "HIGH"
+    },
+    {
+      "raw_name": "Hgb",
+      "canonical_name": "Hemoglobin",
+      "value": 15.5,
+      "value_text": null,
+      "unit_original": "g/dL",
+      "ref_text": "13-17",
+      "ref_low": 13.0,
+      "ref_high": 17.0,
+      "expected_value_canonical": 15.5,
+      "expected_unit_canonical": "g/dL",
+      "expected_flag": "NORMAL"
+    },
+    {
+      "raw_name": "HDL-C",
+      "canonical_name": "HDL Cholesterol",
+      "value": 23.6,
+      "value_text": null,
+      "unit_original": "mg/dL",
+      "ref_text": ">= 40",
+      "ref_low": 40.0,
+      "ref_high": null,
+      "expected_value_canonical": 23.6,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "LOW"
+    },
+    {
+      "raw_name": "LDL-C",
+      "canonical_name": "LDL Cholesterol",
+      "value": 70.8,
+      "value_text": null,
+      "unit_original": "mg/dL",
+      "ref_text": "<= 100",
+      "ref_low": null,
+      "ref_high": 100.0,
+      "expected_value_canonical": 70.8,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "NORMAL"
+    },
+    {
+      "raw_name": "Urine Protein",
+      "canonical_name": "Urine Protein",
+      "value": null,
+      "value_text": "Negative",
+      "unit_original": null,
+      "ref_text": "Negative",
+      "ref_low": null,
+      "ref_high": null,
+      "expected_value_canonical": null,
+      "expected_unit_canonical": null,
+      "expected_flag": "NORMAL"
+    },
+    {
+      "raw_name": "Hb A1c",
+      "canonical_name": "HbA1c",
+      "value": 4.4,
+      "value_text": null,
+      "unit_original": "%",
+      "ref_text": "4 - 5.6",
+      "ref_low": 4.0,
+      "ref_high": 5.6,
+      "expected_value_canonical": 4.4,
+      "expected_unit_canonical": "%",
+      "expected_flag": "NORMAL"
+    },
+    {
+      "raw_name": "Serum Cholesterol",
+      "canonical_name": "Total Cholesterol",
+      "value": 105.0,
+      "value_text": null,
+      "unit_original": "mg/dL",
+      "ref_text": "<= 200",
+      "ref_low": null,
+      "ref_high": 200.0,
+      "expected_value_canonical": 105.0,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "NORMAL"
+    },
+    {
+      "raw_name": "ESR",
+      "canonical_name": null,
+      "value": 10.0,
+      "value_text": null,
+      "unit_original": "mm/hr",
+      "ref_text": "< 20",
+      "ref_low": null,
+      "ref_high": 20.0,
+      "expected_value_canonical": 10.0,
+      "expected_unit_canonical": "mm/hr",
+      "expected_flag": "NORMAL"
+    }
+  ],
+  "planted_pii": [
+    "Sunita Patel",
+    "ID: 5192038",
+    "+91 94480 33445",
+    "sunita.patel84@example.org",
+    "3910 4820 1928",
+    "23 Ashram Road, Navrangpura, Ahmedabad 380009"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "report_date": "2026-03-07",
+  "lab_name": "Sunrise Pathology Centre",
+  "layout": "bordered_table",
+  "results": [
+    {
+      "raw_name": "Hb",
+      "canonical_name": "Hemoglobin",
+      "value": 188.5,
+      "value_text": null,
+      "unit_original": "g/L",
+      "ref_text": "130-170",
+      "ref_low": 130.0,
+      "ref_high": 170.0,
+      "expected_value_canonical": 18.85,
+      "expected_unit_canonical": "g/dL",
+      "expected_flag": "HIGH"
+    },
+    {
+      "raw_name": "LDL-C",
+      "canonical_name": "LDL Cholesterol",
+      "value": 3.6,
+      "value_text": null,
+      "unit_original": "mmol/L",
+      "ref_text": "< 2.6",
+      "ref_low": null,
+      "ref_high": 2.6,
+      "expected_value_canonical": 139.21,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "HIGH"
+    },
+    {
+      "raw_name": "Urine Protein",
+      "canonical_name": "Urine Protein",
+      "value": null,
+      "value_text": "Trace",
+      "unit_original": null,
+      "ref_text": "Negative",
+      "ref_low": null,
+      "ref_high": null,
+      "expected_value_canonical": null,
+      "expected_unit_canonical": null,
+      "expected_flag": "UNKNOWN"
+    },
+    {
+      "raw_name": "Serum Cholesterol",
+      "canonical_name": "Total Cholesterol",
+      "value": 5.9,
+      "value_text": null,
+      "unit_original": "mmol/L",
+      "ref_text": "< 5.2",
+      "ref_low": null,
+      "ref_high": 5.2,
+      "expected_value_canonical": 228.15,
+      "expected_unit_canonical": "mg/dL",
+      "expected_flag": "HIGH"
+    }
+  ],
+  "planted_pii": [
+    "Anil Verma",
+    "ID: 6291048",
+    "+91 98450 11223",
+    "anil.verma21@example.net",
+    "5820 9182 3019",
+    "88 Jubilee Hills, Road No 36, Hyderabad 500033"
+  ]
+}
